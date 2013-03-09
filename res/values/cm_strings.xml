@@ -720,4 +720,7 @@ equiring confirmation</string>
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
 
+    <!-- DarkFox (TRDS) Settings -->
+    <string name="trds_settings_title">Dark UI</string>    
+
 </resources>

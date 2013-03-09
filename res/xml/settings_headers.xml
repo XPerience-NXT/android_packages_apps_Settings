@@ -61,6 +61,12 @@
     <!-- INTERFACE -->
     <header android:title="@string/header_category_interface" />
 
+    <!-- DarkFox (TRDS) Settings -->
+    <header
+        android:id="@+id/trds_settings"
+        android:icon="@drawable/ic_settings_trds"
+        android:title="@string/trds_settings_title" />
+
     <!-- System UI -->
     <header
         android:id="@+id/system_settings"
