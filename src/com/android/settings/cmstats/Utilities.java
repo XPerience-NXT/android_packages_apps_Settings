@@ -28,8 +28,12 @@ import java.security.MessageDigest;
 
 public class Utilities {
     public static String getUniqueID(Context context) {
-        final String id = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
-        return digest(context.getPackageName() + id);
+        TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+        String id = tm.getDeviceId();
+        if (id == null) {
+            id = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+        }
+        return id;
     }
 
     public static String getCarrier(Context context) {
