@@ -357,6 +357,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery or bootloader</string>
 
+    <string name="power_menu_screenrecord_title">Screen record</string>
+    <string name="power_menu_screenrecord_summary">When unlocked, include option in the power menu for screen recording feature</string>
+
     <string name="app_security_title">App security</string>
 
     <!-- Setting checkbox title for root access -->
