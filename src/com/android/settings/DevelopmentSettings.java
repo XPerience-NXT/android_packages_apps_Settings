@@ -287,6 +287,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
         mAllPrefs.add(mPassword);
         mAdvancedReboot = findAndInitCheckboxPref(ADVANCED_REBOOT_KEY);
+        updateAdvancedRebootOptions();
 
         mScreenrecordPref = (CheckBoxPreference) findPreference(KEY_SCREENRECORD);
         mScreenrecordPref.setChecked((Settings.System.getInt(getContentResolver(),
@@ -567,7 +568,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private void resetAdvancedRebootOptions() {
         Settings.Secure.putInt(getActivity().getContentResolver(),
-                Settings.Secure.ADVANCED_REBOOT, 0);
+                Settings.Secure.ADVANCED_REBOOT, 1);
     }
 
     private void writeAdvancedRebootOptions() {
