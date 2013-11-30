@@ -1435,10 +1435,9 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         } else if (preference == mAdvancedReboot) {
             writeAdvancedRebootOptions();
         } else if (preference == mScreenrecordPref) {
-            value = mScreenrecordPref.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.POWER_MENU_SCREENRECORD_ENABLED,
-                    value ? 1 : 0);
+                    mScreenrecordPref.isChecked() ? 1 : 0);
         } else if (preference == mKillAppLongpressBack) {
             writeKillAppLongpressBackOptions();
         } else {
