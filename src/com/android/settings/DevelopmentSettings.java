@@ -159,8 +159,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String ADVANCED_REBOOT_KEY = "advanced_reboot";
 
-    private static final String KEY_SCREENRECORD = "power_menu_screenrecord";
-
     private static final int RESULT_DEBUG_APP = 1000;
 
     private IWindowManager mWindowManager;
@@ -222,7 +220,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private PreferenceScreen mDevelopmentTools;
 
     private CheckBoxPreference mAdvancedReboot;
-    private CheckBoxPreference mScreenrecordPref;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     private final ArrayList<CheckBoxPreference> mResetCbPrefs
@@ -288,10 +285,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mAllPrefs.add(mPassword);
         mAdvancedReboot = findAndInitCheckboxPref(ADVANCED_REBOOT_KEY);
         updateAdvancedRebootOptions();
-
-        mScreenrecordPref = (CheckBoxPreference) findPreference(KEY_SCREENRECORD);
-        mScreenrecordPref.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.POWER_MENU_SCREENRECORD_ENABLED, 1) == 1));
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
             disableForUser(mEnableAdb);
@@ -1434,10 +1427,6 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeWifiDisplayCertificationOptions();
         } else if (preference == mAdvancedReboot) {
             writeAdvancedRebootOptions();
-        } else if (preference == mScreenrecordPref) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.POWER_MENU_SCREENRECORD_ENABLED,
-                    mScreenrecordPref.isChecked() ? 1 : 0);
         } else if (preference == mKillAppLongpressBack) {
             writeKillAppLongpressBackOptions();
         } else {
