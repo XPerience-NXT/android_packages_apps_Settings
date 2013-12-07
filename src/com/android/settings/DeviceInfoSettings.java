@@ -187,6 +187,12 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
         // Remove regulatory information if not enabled.
         removePreferenceIfBoolFalse(KEY_REGULATORY_INFO,
                 R.bool.config_show_regulatory_info);
+
+        // Remove some blocks
+        getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_CPU));
+        getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_MEMORY));
+        getPreferenceScreen().removePreference(findPreference(KEY_MOD_BUILD_DATE));
+        getPreferenceScreen().removePreference(findPreference(KEY_SELINUX_STATUS));
     }
 
     @Override
