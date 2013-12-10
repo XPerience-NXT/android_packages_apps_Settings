@@ -510,7 +510,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Change Log strings -->
     <string name="changelog_title">View changelog</string>
-    <string name="changelog_dialog">Changelog</string>
     <string name="changelog_loading">Loading changelog...</string>
     <string name="changelog_error">Unable to load changelog</string>
     <string name="changelog_unknown">Unknown</string>
@@ -858,5 +857,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!--  development shortcut -->
     <string name="development_shortcut_title">Development shortcut</string>
     <string name="development_shortcut_summary">Enable \'wipe data\' and \'force close\' options in notification area and recent apps list</string>
+
+    <!-- WhisperPush -->
+    <string name="whisperpush_title">WhisperPush</string>
+    <string name="whisperpush_registration_title">Register</string>
+    <string name="whisperpush_registration_summary">Register for WhisperPush to enable encrypted SMS.</string>
+    <string name="whisperpush_identitykey_title">Review identity keys</string>
 
 </resources>
