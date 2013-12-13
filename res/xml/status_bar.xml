@@ -23,7 +23,6 @@
         android:dialogTitle="@string/status_bar_battery_title"
         android:title="@string/status_bar_battery_title"
         android:entries="@array/entries_status_bar_battery"
-        android:entryValues="@array/values_status_bar_battery"
-        android:defaultValue="0" />
+        android:entryValues="@array/values_status_bar_battery" />
 
 </PreferenceScreen>
