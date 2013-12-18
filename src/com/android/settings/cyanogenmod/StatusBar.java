@@ -38,6 +38,13 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarCmSignal;
 
+    private static final String STATUS_BAR_BATTERY_SHOW_PERCENT = "status_bar_battery_show_percent";
+
+    private static final String STATUS_BAR_STYLE_HIDDEN = "5";
+    private static final String STATUS_BAR_STYLE_TEXT = "6";
+
+    private SystemSettingCheckBoxPreference mStatusBarBatteryShowPercent;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +55,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         ContentResolver resolver = getActivity().getContentResolver();
 
         mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
+        mStatusBarBatteryShowPercent =
+                (SystemSettingCheckBoxPreference) findPreference(STATUS_BAR_BATTERY_SHOW_PERCENT);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
 
         CheckBoxPreference statusBarBrightnessControl = (CheckBoxPreference)
@@ -90,6 +99,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             int index = mStatusBarBattery.findIndexOfValue((String) newValue);
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_BATTERY, batteryStyle);
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
+
+            enableDependents();
             return true;
         } else if (preference == mStatusBarCmSignal) {
             int signalStyle = Integer.valueOf((String) newValue);
@@ -100,5 +111,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         }
 
         return false;
+    }
+
+    private void enableDependents() {
+        mStatusBarBatteryShowPercent.setEnabled(
+                mStatusBarBattery.getValue().equals(STATUS_BAR_STYLE_TEXT)
+                || mStatusBarBattery.getValue().equals(STATUS_BAR_STYLE_HIDDEN));
     }
 }
