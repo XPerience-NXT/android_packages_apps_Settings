@@ -81,9 +81,9 @@ public class ReportingServiceManager extends BroadcastReceiver {
 
         SharedPreferences prefs = AnonymousStats.getPreferences(context);
         boolean optedIn = prefs.getBoolean(AnonymousStats.ANONYMOUS_OPT_IN, true);
-        if (!optedIn) {
-            return;
-        }
+        //if (!optedIn) {
+            //return;
+        //}
         long lastSynced = prefs.getLong(AnonymousStats.ANONYMOUS_LAST_CHECKED, 0);
         if (lastSynced == 0) {
             setAlarm(context, 0);
