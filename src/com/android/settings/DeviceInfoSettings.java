@@ -29,7 +29,6 @@ import android.os.UserHandle;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
-import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -321,7 +320,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
 
     public static String getFormattedKernelVersion() {
         try {
-            return formatKernelVersion(readLine(FILENAME_PROC_VERSION)).replace("-CM-", "-");
+            return formatKernelVersion(readLine(FILENAME_PROC_VERSION));
 
         } catch (IOException e) {
             Log.e(LOG_TAG,
