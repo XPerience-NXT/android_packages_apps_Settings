@@ -43,20 +43,20 @@
     <string name="start_time_title">Inici</string>
     <string name="end_time_title">Fi</string>
     <string name="device_hostname">Hostname del dipositiu</string>
-    <string name="mod_version">CyanogenMod versió</string>
+    <string name="mod_version">CyanFox versió</string>
     <string name="mod_version_default">Desconegut</string>
     <string name="build_date">Data d\'elaboració</string>
     <string name="cpu_info">CPU</string>
     <string name="mem_info">Memòria</string>
-    <string name="anonymous_statistics_title">Estadístiques CyanogenMod</string>
-    <string name="anonymous_statistics_summary">Ajuda a fer millor CyanogenMod optant a transmetre estadístiques anònimes</string>
+    <string name="anonymous_statistics_title">Estadístiques CyanFox</string>
+    <string name="anonymous_statistics_summary">Ajuda a fer millor CyanFox optant a transmetre estadístiques anònimes</string>
     <string name="anonymous_statistics_warning_title">Quant a</string>
     <string name="anonymous_statistics_warning">Optant a les estadístiques de CyanogenMod permetrà que dades no-personals siguin transmeses als desenvolupadors de CyanogenMod per rastrejar les intal·lacions individuals a través dels dispositius. La informació transmesa inclou un identificador únic, que no compromet la privacitat o dades personals. Les dades son transmeses durant cada arrancada.\n\nPer un exemple de les dades transmeses, pica a vista prèvia de Dades.</string>
     <string name="enable_reporting_title">Activa informes</string>
     <string name="preview_data_title">Vista prèvia de Dades</string>
     <string name="view_stats_title">Mostra estad.</string>
     <string name="anonymous_learn_more">Aprèn més</string>
-    <string name="anonymous_notification_desc">Activa o Desactiva les estadístiques de CyanogenMod</string>
+    <string name="anonymous_notification_desc">Activa o Desactiva les estadístiques de CyanFox</string>
     <string name="preview_id_title">ID únic</string>
     <string name="preview_device_title">Dispositiu</string>
     <string name="preview_version_title">Versió</string>
@@ -393,7 +393,7 @@
     <string name="power_menu_airplane_title">Mode avió</string>
     <string name="power_menu_user_title">Intercanviador d\'usuaris</string>
     <string name="power_menu_sound_title">Panell de so</string>
-    <string name="cmupdate_settings_title">Actualitzacions CyanogenMod</string>
+    <string name="cmupdate_settings_title">Actualitzacions CyanFox</string>
     <string name="cmupdate_settings_summary">Verifica, mostra o instal·la les actualitzacions disponibles</string>
     <string name="advanced_settings_title">Avançat</string>
     <string name="status_bar_title">Barra d\'estat</string>
@@ -654,7 +654,7 @@ Hi ha disponibles opcions adicionals apretant llargament sobre la línia. Selecc
     <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
     <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
     <string name="menu_stats_reset">Reinicia</string>
-    <string name="cmlicense_title">Llicència CyanogenMod</string>
-    <string name="settings_cmlicense_activity_title">Llicència CyanogenMod</string>
+    <string name="cmlicense_title">Llicència CyanFox</string>
+    <string name="settings_cmlicense_activity_title">Llicència CyanFox</string>
     <string name="settings_cmlicense_activity_unreachable">No tens connexió de dades. Per veure aquesta informació ara, ves a %s des d\'un ordenador connectat a internet.</string>
 </resources>
