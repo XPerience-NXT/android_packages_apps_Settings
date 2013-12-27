@@ -19,6 +19,8 @@
     android:title="@string/system_interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <header android:title="@string/header_category_general_settings" />
+
     <PreferenceScreen
         android:key="status_bar"
         android:fragment="com.android.settings.cyanogenmod.StatusBar"
@@ -35,23 +37,9 @@
         android:title="@string/notification_drawer_title" />
 
     <PreferenceScreen
-        android:key="halo_settings"
-        android:fragment="com.android.settings.cyanogenmod.Halo"
-        android:title="@string/halo_settings_title" />
-
-    <PreferenceScreen
         android:key="lock_screen_settings"
         android:fragment="com.android.settings.cyanogenmod.LockscreenInterface"
         android:title="@string/lock_screen_title" />
-
-    <PreferenceScreen
-        android:key="themes_settings"
-        android:title="@string/themes_settings_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.tmobile.themechooser"
-            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    </PreferenceScreen>
 
     <ListPreference
             android:key="expanded_desktop"
@@ -65,6 +53,13 @@
             android:title="@string/power_menu_expanded_desktop"
             android:persistent="true" />
 
+    <header android:title="@string/header_category_extra_settings" />
+
+    <PreferenceScreen
+        android:key="halo_settings"
+        android:fragment="com.android.settings.cyanogenmod.Halo"
+        android:title="@string/halo_settings_title" />
+
     <!-- Device Specific Touchscreen gestures -->
     <Preference
         android:key="touch_screen_gesture_settings">
@@ -73,6 +68,15 @@
             android:targetPackage="com.cyanogenmod.settings.device"
             android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
     </Preference>
+
+    <PreferenceScreen
+        android:key="themes_settings"
+        android:title="@string/themes_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.tmobile.themechooser"
+            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+    </PreferenceScreen>
 
     <PreferenceCategory
         android:key="navigation_bar"
