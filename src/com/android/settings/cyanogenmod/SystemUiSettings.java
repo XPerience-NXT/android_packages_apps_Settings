@@ -23,6 +23,7 @@ import android.os.RemoteException;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
@@ -36,9 +37,11 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
 
+    private static final String CATEGORY_GENERAL = "cat_general";
+    private static final String CATEGORY_EXTRA = "cat_extra";
+    private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
-    private static final String CATEGORY_NAVBAR = "navigation_bar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
 
     // Enable/disable nav bar  
@@ -57,13 +60,18 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         addPreferencesFromResource(R.xml.system_ui_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
 
+        final PreferenceCategory generalCat =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_GENERAL);
+        final PreferenceCategory extraCat =
+                (PreferenceCategory) prefScreen.findPreference(CATEGORY_EXTRA);
+
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
         mExpandedDesktopNoNavbarPref =
                 (CheckBoxPreference) findPreference(KEY_EXPANDED_DESKTOP_NO_NAVBAR);
 
         Utils.updatePreferenceToSpecificActivityFromMetaDataOrRemove(getActivity(),
-                getPreferenceScreen(), KEY_SCREEN_GESTURE_SETTINGS);
+                extraCat, KEY_SCREEN_GESTURE_SETTINGS);
 
         int expandedDesktopValue = Settings.System.getInt(getContentResolver(),
                 Settings.System.EXPANDED_DESKTOP_STYLE, 0);
@@ -75,14 +83,14 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 mExpandedDesktopPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopPref.setValue(String.valueOf(expandedDesktopValue));
                 updateExpandedDesktop(expandedDesktopValue);
-                prefScreen.removePreference(mExpandedDesktopNoNavbarPref);
+                generalCat.removePreference(mExpandedDesktopNoNavbarPref);
             } else {
                 // Hide no-op "Status bar visible" expanded desktop mode
                 mExpandedDesktopNoNavbarPref.setOnPreferenceChangeListener(this);
                 mExpandedDesktopNoNavbarPref.setChecked(expandedDesktopValue > 0);
-                prefScreen.removePreference(mExpandedDesktopPref);
+                generalCat.removePreference(mExpandedDesktopPref);
                 // Hide navigation bar category
-                prefScreen.removePreference(findPreference(CATEGORY_NAVBAR));
+                //prefScreen.removePreference(findPreference(CATEGORY_NAVBAR));
             }
         } catch (RemoteException e) {
             Log.e(TAG, "Error getting navigation bar status");
