@@ -59,4 +59,9 @@
         android:title="@string/status_bar_notif_count_title"
         android:summary="@string/status_bar_notif_count_summary" />
 
+    <PreferenceScreen
+        android:key="network_usage_stats"
+        android:fragment="com.android.settings.cyanogenmod.NetworkUsageStats"
+        android:title="@string/status_bar_network_cat" />
+
 </PreferenceScreen>
