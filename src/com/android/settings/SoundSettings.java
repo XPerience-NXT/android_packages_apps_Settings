@@ -37,6 +37,7 @@ import android.media.RingtoneManager;
 import android.media.audiofx.AudioEffect;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Vibrator;
@@ -62,8 +63,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final int DIALOG_NOT_DOCKED = 1;
 
     /** If there is no setting in the provider, use this. */
-    private static final int FALLBACK_EMERGENCY_TONE_VALUE = 0;
 
+    private static final int FALLBACK_EMERGENCY_TONE_VALUE = 0;
     private static final String KEY_VIBRATE = "vibrate_when_ringing";
     private static final String KEY_RING_VOLUME = "ring_volume";
     private static final String KEY_INCREASING_RING = "increasing_ring";
@@ -86,6 +87,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_NOTIFICATIONS = "power_notifications";
     private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
     private static final String KEY_POWER_NOTIFICATIONS_RINGTONE = "power_notifications_ringtone";
+
+    private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
+    private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
 
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
@@ -123,6 +127,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mPowerSounds;
     private CheckBoxPreference mPowerSoundsVibrate;
     private Preference mPowerSoundsRingtone;
+    private CheckBoxPreference mCameraSounds;
 
     private Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
@@ -289,6 +294,11 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             }
         }
 
+        mCameraSounds = (CheckBoxPreference) findPreference(KEY_CAMERA_SOUNDS);
+        mCameraSounds.setPersistent(false);
+        mCameraSounds.setChecked(SystemProperties.getBoolean(PROP_CAMERA_SOUND, true));
+        mCameraSounds.setOnPreferenceChangeListener(this);
+
         initDockSettings();
     }
 
@@ -446,6 +456,13 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                         Settings.Global.EMERGENCY_TONE, value);
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist emergency tone setting", e);
+            }
+        }
+        if (KEY_CAMERA_SOUNDS.equals(key)) {
+            if ((Boolean) objValue) {
+                SystemProperties.set(PROP_CAMERA_SOUND, "1");
+            } else {
+                SystemProperties.set(PROP_CAMERA_SOUND, "0");
             }
         }
 
