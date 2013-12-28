@@ -1780,7 +1780,7 @@
         </activity>
 
         <activity android:name=".cyanogenmod.LockscreenTargets" />
-
+        <activity android:name=".cyanogenmod.Halo" />
         <activity android:name=".cyanogenmod.PerformanceSettings" />
 
         <activity android:name=".ApnEditor" />
