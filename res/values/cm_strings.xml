@@ -906,7 +906,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="status_bar_style_text">Text</string>
     <string name="status_bar_style_hidden">Hidden</string>
     <string name="status_bar_battery_show_percent_title">Show battery status percent</string>
-    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_title">Double tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double tap status bar to put your device into sleep mode instantly</string>
     <string name="status_bar_signal_text_title">Signal status style</string>
     <string name="status_bar_signal_style_icon">Icon</string>
     <string name="status_bar_signal_style_text">Text</string>
@@ -1044,16 +1045,16 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="hide_network_speed_summary">Hide network stats indicator when there is no traffic</string>
 
     <!-- Recents Ram Bar -->
-    <string name="ram_bar">Recents RAM bar</string>
+    <string name="ram_bar">RAM bar</string>
     <string name="ram_bar_note_title">Note</string>
-    <string name="ram_bar_note_summary">This RAM bar shows the actual android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster.</string>
-    <string name="ram_bar_mode_title">Recents RAM bar mode</string>
-    <string name="ram_bar_mode_dialog_title">Show on recents RAM bar</string>
+    <string name="ram_bar_note_summary">This RAM bar shows the actual Android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster.</string>
+    <string name="ram_bar_mode_title">RAM bar mode</string>
+    <string name="ram_bar_mode_dialog_title">Show RAM bar in recent apps</string>
     <string name="ram_bar_none">None</string>
     <string name="ram_bar_apps">Applications</string>
     <string name="ram_bar_cache">Applications and cache</string>
     <string name="ram_bar_other">Applications, cache and other</string>
-    <string name="ram_bar_style_cat">Recents RAM bar style</string>
+    <string name="ram_bar_style_cat">RAM bar style</string>
     <string name="ram_bar_color_app_mem_color">Applications RAM color</string>
     <string name="ram_bar_color_cache_mem_color">Cache RAM color</string>
     <string name="ram_bar_color_total_mem_color">Other RAM color</string>
@@ -1066,8 +1067,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
+    <string name="arrow_right">&#8594;</string>
+    <string name="arrow_down">&#8595;</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
