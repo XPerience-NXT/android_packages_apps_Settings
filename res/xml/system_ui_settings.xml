@@ -55,6 +55,35 @@
                 android:title="@string/power_menu_expanded_desktop"
                 android:persistent="true" />
 
+        <PreferenceScreen
+            android:key="navigation_bar"
+            android:title="@string/navigation_bar_category" >
+    
+            <CheckBoxPreference
+                android:key="enable_nav_bar"
+                android:title="@string/navbar_enable_bar"
+                android:summary="@string/navbar_enable_bar_summary" />
+    
+            <PreferenceScreen
+                android:key="navbar_dimen_settings"
+                android:fragment="com.android.settings.cyanogenmod.NavbarDimenSettings"
+                android:title="@string/navbar_style_dimen_title" 
+                android:dependency="enable_nav_bar" />
+    
+            <PreferenceScreen
+                android:key="navigation_bar"
+                android:fragment="com.android.settings.cyanogenmod.NavBar"
+                android:title="@string/navigation_bar_title"
+                android:dependency="enable_nav_bar" />
+    
+            <PreferenceScreen
+                android:key="navigation_ring"
+                android:fragment="com.android.settings.cyanogenmod.NavRing"
+                android:title="@string/navigation_ring_title"
+                android:dependency="enable_nav_bar" />
+
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -88,35 +117,6 @@
                 android:targetPackage="com.tmobile.themechooser"
                 android:targetClass="com.tmobile.themechooser.ThemeChooser" />
         </PreferenceScreen>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="navigation_bar"
-        android:title="@string/navigation_bar_category" >
-
-        <CheckBoxPreference
-            android:key="enable_nav_bar"
-            android:title="@string/navbar_enable_bar"
-            android:summary="@string/navbar_enable_bar_summary" />
-
-        <PreferenceScreen
-            android:key="navbar_dimen_settings"
-            android:fragment="com.android.settings.cyanogenmod.NavbarDimenSettings"
-            android:title="@string/navbar_style_dimen_title" 
-            android:dependency="enable_nav_bar" />
-
-        <PreferenceScreen
-            android:key="navigation_bar"
-            android:fragment="com.android.settings.cyanogenmod.NavBar"
-            android:title="@string/navigation_bar_title"
-            android:dependency="enable_nav_bar" />
-
-        <PreferenceScreen
-            android:key="navigation_ring"
-            android:fragment="com.android.settings.cyanogenmod.NavRing"
-            android:title="@string/navigation_ring_title"
-            android:dependency="enable_nav_bar" />
 
     </PreferenceCategory>
 
