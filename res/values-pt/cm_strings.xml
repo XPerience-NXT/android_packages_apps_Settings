@@ -43,7 +43,7 @@
     <string name="anonymous_statistics_title">Estatísticas CyanFox</string>
     <string name="anonymous_statistics_summary">Ajude a melhorar o CyanFox optando por enviar estatísticas anonimas</string>
     <string name="anonymous_statistics_warning_title">Sobre</string>
-    <string name="anonymous_statistics_warning">Optar por enviar estatísticas anonimas do CyanogenMod permitirá que dados não-pessoais sejam enviados para os
+    <string name="anonymous_statistics_warning">Optar por enviar estatísticas anonimas do CyanFox permitirá que dados não-pessoais sejam enviados para os
         desenvolvedores do CyanFox para rastrear instalações únicas em dispositivos. As informações enviadas incluem um identificador unico,
         que não compromete sua privacidade ou dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara um exemplo de dados que são enviados, toque em Pré-visualizar Dados.</string>
     <string name="enable_reporting_title">Habilitar relatório</string>
@@ -349,7 +349,7 @@
     <string name="headset_connect_player_title">Abrir aplicativo de música</string>
     <string name="headset_connect_player_summary">Abrir aplicativo de música padrão quando o fone de ouvido for conectado</string>
     <string name="cyanogenmod_waiver_title">Garantia</string>
-    <string name="cyanogenmod_waiver_body">Alterar esta configuração pode ser contra as leis do seu local.\n\nAo selecionar abaixo \'OK\', você reconhece este aviso e garantia, proteção e isenção ao CyanogenMod e seus contribuintes de todas responsabilidades legais.</string>
+    <string name="cyanogenmod_waiver_body">Alterar esta configuração pode ser contra as leis do seu local.\n\nAo selecionar abaixo \'OK\', você reconhece este aviso e garantia, proteção e isenção ao CyanFox e seus contribuintes de todas responsabilidades legais.</string>
     <string name="expanded_desktop_disabled">Desligado</string>
     <string name="expanded_desktop_status_bar">Barra de status visível</string>
     <string name="expanded_desktop_no_status_bar">Barra de status oculta</string>
@@ -615,7 +615,7 @@ controle adicionais. \'Remover\' apaga a linha selecionada.
     <string name="usb_mass_storage_title">Armazenamento em massa</string>
     <string name="usb_mass_storage_summary">Ativar armazenamento em massa USB</string>
     <string name="cmlicense_title">CyanFox Legal</string>
-    <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_title">CyanFox Legal</string>
     <string name="settings_cmlicense_activity_unreachable">Você não tem conexão com a Internet. Para ver esta informação agora, navegue para %s de qualquer computador conectado à Internet.</string>
     <string name="lockscreen_vibrate_enabled_title">Vibrar</string>
     <string name="lockscreen_vibrate_enabled_head">Vibra quando desbloqueia</string>
