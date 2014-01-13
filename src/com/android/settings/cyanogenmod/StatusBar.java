@@ -35,15 +35,14 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     private static final String STATUS_BAR_BATTERY = "status_bar_battery";
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
 
-    private ListPreference mStatusBarBattery;
-    private ListPreference mStatusBarCmSignal;
-
     private static final String STATUS_BAR_BATTERY_SHOW_PERCENT = "status_bar_battery_show_percent";
 
-    private static final String STATUS_BAR_STYLE_HIDDEN = "5";
+    private static final String STATUS_BAR_STYLE_HIDDEN = "4";
     private static final String STATUS_BAR_STYLE_TEXT = "6";
 
+    private ListPreference mStatusBarBattery;
     private SystemSettingCheckBoxPreference mStatusBarBatteryShowPercent;
+    private ListPreference mStatusBarCmSignal;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -89,6 +88,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         if (Utils.isTablet(getActivity())) {
             prefSet.removePreference(statusBarBrightnessControl);
         }
+
+        enableStatusBarBatteryDependents(mStatusBarBattery.getValue());
     }
 
     @Override
@@ -99,14 +100,8 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
             int index = mStatusBarBattery.findIndexOfValue((String) newValue);
             Settings.System.putInt(resolver, Settings.System.STATUS_BAR_BATTERY, batteryStyle);
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
-
-            enableDependents();
-            return true;
-        } else if (preference == mStatusBarCmSignal) {
-            int signalStyle = Integer.valueOf((String) newValue);
-            int index = mStatusBarCmSignal.findIndexOfValue((String) newValue);
-            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_SIGNAL_TEXT, signalStyle);
-            mStatusBarCmSignal.setSummary(mStatusBarCmSignal.getEntries()[index]);
+            
+            enableStatusBarBatteryDependents((String)newValue);
             return true;
         } else if (preference == mStatusBarCmSignal) {
             int signalStyle = Integer.valueOf((String) newValue);
@@ -119,9 +114,9 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
         return false;
     }
 
-    private void enableDependents() {
-        mStatusBarBatteryShowPercent.setEnabled(
-                mStatusBarBattery.getValue().equals(STATUS_BAR_STYLE_TEXT)
-                || mStatusBarBattery.getValue().equals(STATUS_BAR_STYLE_HIDDEN));
+    private void enableStatusBarBatteryDependents(String value) {
+        boolean enabled = !(value.equals(STATUS_BAR_STYLE_TEXT)
+                || value.equals(STATUS_BAR_STYLE_HIDDEN));
+        mStatusBarBatteryShowPercent.setEnabled(enabled);
     }
 }
