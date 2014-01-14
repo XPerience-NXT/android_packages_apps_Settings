@@ -18,7 +18,7 @@
     <string name="cyanogenmod_waiver_title">Відмова від відповідальності</string>
     <string name="cyanogenmod_waiver_body">Зміна цих налаштувань може суперечити законам вашої країни.\n\nНатискаючи \"OK\" Ви погоджуєтесь із цим попередженням та звільняєте CyanFox і всіх його розробників від любих юридичних зобов’язань.</string>
 
-    <string name="wifi_disabled_association_rejected">З'єднання відхилено</string>
+    <string name="wifi_disabled_association_rejected">З\'єднання відхилено</string>
     <string name="wifi_setting_countrycode_title">Wi-Fi код регіону</string>
     <string name="wifi_setting_countrycode_summary">Вкажіть код регіону для Wi-Fi</string>
     <string name="wifi_setting_countrycode_error">Під час настройки коду регіону Wi-Fi виникла помилка.</string>
@@ -47,7 +47,7 @@
     <string name="collapse_on_dismiss_if_no_clearable_summary">Закрити після вилучення останнього тимчасового сповіщення</string>
     <string name="category_quick_access">Стрічка швидкого доступу</string>
     <string name="title_quick_access">Показати в шторці</string>
-    <string name="title_quick_access_linked">З'єднані плитки</string>
+    <string name="title_quick_access_linked">З\'єднані плитки</string>
     <string name="summary_quick_access_linked">Використовувати ті самі плитки і макети що у панелі Швидких Налаштувань</string>
 
     <string name="lock_screen_title">Екран блокування</string>
@@ -216,7 +216,7 @@
     <string name="increasing_ring_interval_3seconds">3 секунди</string>
     <string name="increasing_ring_interval_5seconds">5 секунд</string>
     <string name="increasing_ring_interval_10seconds">10 секунд</string>
-    <string name="link_volume_ringtones">Зв'язати гучність</string>
+    <string name="link_volume_ringtones">Зв\'язати гучність</string>
     <string name="link_volume_mutes">Беззвучний режим впливає на сповіщення</string>
     <string name="volume_keys_control_ring_stream">Клавіші регулювання гучності контролюють гучність дзвінка</string>
     <string name="safe_headset_volume_title">Безпечна гучність гарнітури</string>
@@ -474,14 +474,14 @@
     <string name="profile_trigger_connect">При перемиканні</string>
     <string name="profile_trigger_disconnect">При відключенні</string>
     <string name="profile_trigger_notrigger">Не впливає на зміну профілю</string>
-    <string name="profile_write_nfc_tag">Прив'язати до NFC-мітки</string>
+    <string name="profile_write_nfc_tag">Прив\'язати до NFC-мітки</string>
     <string name="profile_write_touch_tag">Прикладіть мітку для її запису</string>
     <string name="profile_write_success">Мітка успішно записана</string>
     <string name="profile_write_failed">Помилка записи даних на мітку!</string>
     <string name="profile_selected">Вибраний профіль: %1$s</string>
     <string name="profile_nfc_text">Запис NFC-мітки для профілю дозволить дотиком до мітки вибрати потрібний профіль. При повторному дотику буде відновлений профіль який використовувався раніше.</string>
     <string name="profile_unknown_nfc_tag">Невідомий профіль</string>
-    <string name="profile_add_nfc_text">Ця NFC-мітка присвоєна невідомому профілем. Прив'язка NFC-мітки до існуючого профілю дозволить використовувати позначку для його вибору.</string>
+    <string name="profile_add_nfc_text">Ця NFC-мітка присвоєна невідомому профілем. Прив\'язка NFC-мітки до існуючого профілю дозволить використовувати позначку для його вибору.</string>
     <string name="profile_select">Виберіть профіль</string>
 
     <string name="gps_download_data_wifi_only">Завантажувати дані GPS тільки Wi-Fi</string>
@@ -636,10 +636,10 @@
 
     <string name="cmlicense_title">Політика конфіденційності CyanFox</string>
     <string name="settings_cmlicense_activity_title">Політика конфіденційності CyanFox</string>
-    <string name="settings_cmlicense_activity_unreachable">Пристрій не підключено до Інтернету. Щоб переглянути цю інформацію, відкрийте сторінку %s на будь-якому комп'ютері з інтернет-доступом.</string>
+    <string name="settings_cmlicense_activity_unreachable">Пристрій не підключено до Інтернету. Щоб переглянути цю інформацію, відкрийте сторінку %s на будь-якому комп\'ютері з інтернет-доступом.</string>
 
     <string name="cpu_info">Процесор</string>
-    <string name="mem_info">Пам'ять</string>
+    <string name="mem_info">Пам\'ять</string>
     <string name="mod_version">Версія CyanFox</string>
     <string name="mod_version_default">Невідомо</string>
     <string name="build_date">Дата збірки</string>
