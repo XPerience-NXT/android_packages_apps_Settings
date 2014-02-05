@@ -84,8 +84,8 @@
     <!-- The Real Dark XPerience (TRDS) Settings -->
     <header
         android:id="@+id/trds_settings"
-        android:icon="@drawable/ic_settings_trds"
         android:title="@string/trds_settings_title" />
+     <!--   android:icon="@drawable/ic_settings_trds"-->
 
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
