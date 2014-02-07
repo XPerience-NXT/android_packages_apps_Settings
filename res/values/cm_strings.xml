@@ -1148,7 +1148,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="app_ops_reset_confirm_title">Confirm counters reset</string>
     <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset AppOps counters ?</string>
 
-<<<<<<< HEAD
     <!-- ListView animation -->
     <string name="listview_animation_title">ListView animation</string>
     <string name="listview_off">Off</string>
@@ -1176,10 +1175,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Other Settings Category -->
     <string name="other_category">Animator</string>
-=======
+
      <!--Lockscreen See Through-->
      <string name="see_through_title">See through</string>
      <string name="see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
->>>>>>> 089fc7d4da1ed241222c7627d745f2b7b774b4d1
 
 </resources>
