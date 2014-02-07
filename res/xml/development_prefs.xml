@@ -322,4 +322,17 @@
 
     </PreferenceCategory>
 
+
+<!--XPERIENCE CATEGORY-->
+    <PreferenceCategory android:key="xperience_catego"
+            android:title="@string/xperience_catego">
+
+
+        <CheckBoxPreference
+            android:key="show_cpu_info"
+            android:title="@string/show_cpu_info"
+            android:summary="@string/show_cpu_info_summary"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
