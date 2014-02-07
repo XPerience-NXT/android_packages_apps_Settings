@@ -837,8 +837,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
 
-    <!-- DarkFox (TRDS) Settings -->
-    <string name="trds_settings_title">Dark UI</string>
+    <!-- XPerience in the DarkNess (TRDS) Settings -->
+    <string name="trds_settings_title">XPerience in The DarkNess</string>
 
     <!-- Lock screen buttons -->
     <string name="lockscreen_buttons_title">Button actions</string>
