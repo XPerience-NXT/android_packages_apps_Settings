@@ -1177,8 +1177,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
     }
 
-        updateCheckBox(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
     private void updateCpuInfoOptions() {
+        updateCheckBox(mShowCpuInfo, Settings.Global.getInt(getActivity().getContentResolver(),
                 Settings.Global.SHOW_CPU, 0) != 0);
     }
 
