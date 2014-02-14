@@ -15,11 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> cd511cf299bdcf35aaeff215859727e643ddc062
     <string name="wifi_setting_countrycode_title">Código de región Wi-Fi</string>
     <string name="wifi_setting_countrycode_summary">Especificar el código de región para Wi-Fi</string>
     <string name="wifi_setting_countrycode_error">Ocurrió un error al establecer el código de región</string>
@@ -720,12 +716,7 @@ podrás crear una nueva línea con el fin de insertar puntos de control adiciona
     <string name="ime_switcher_notify_summary">Muestra el selector de método de entrada de texto en la barra de notificaciones</string>
 
     <!-- AOSP -->
-<<<<<<< HEAD
-=======
-=======
->>>>>>> cd511cf299bdcf35aaeff215859727e643ddc062
     <!-- AOSP/CAF -->
->>>>>>> 6e98dfa03803c98db8fc75bdb7c9b33b4ee810ce
     <string name="intent_sender_data_label"><xliff:g id="data">Datos:</xliff:g></string>
     <string name="bluetooth_enter_pin_msg_hs">\nEscribe el PIN para vincular con \u00AB<xliff:g id="device_name">%1$s</xliff:g>\u00BB. (Seguridad alta habilitada: Es necesaria una clave de 16 caracteres)</string>
     <string name="bluetooth_profile_sap">Acceso a SIM</string>
