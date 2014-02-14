@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="cyanogenmod_waiver_title">Отказ от ответственности</string>
-    <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете CyanFox и всех его разработчиков от любых юридических обязательств.</string>
+    <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете XPerience и всех его разработчиков от любых юридических обязательств.</string>
 
     <string name="wifi_disabled_association_rejected">Соединение отклонено</string>
     <string name="wifi_setting_countrycode_title">Код региона Wi-Fi</string>
@@ -662,7 +662,7 @@
     <string name="kill_app_longpress_back">Закрытие приложения</string>
     <string name="kill_app_longpress_back_summary">Долгое нажатие кнопки «Назад» закроет запущенное приложение</string>
     <string name="custom_runtime_warning_title">Внимание</string>
-    <string name="custom_runtime_warning_message">ART не поддерживается CyanFox. Эта опция является экспериментальной и может повлечь нестабильную работу, ошибки, потерю данных или даже препятствовать загрузке устройства. Посетите страницу «&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Введение в ART&lt;/a&gt;» (на английском языке) для получения подробных сведений.&lt;br/&gt;&lt;br/&gt;Мы просим не присылать баг-репорты, если вы выбрали ART в качестве среды выполнения системы.&lt;br/&gt;&lt;br/&gt;Вы действительно хотите перезагрузить устройство и переключить среду выполнения с «<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>» на «<xliff:g id="new" example="libart.so">%2$s</xliff:g>»?</string>
+    <string name="custom_runtime_warning_message">ART не поддерживается XPerience. Эта опция является экспериментальной и может повлечь нестабильную работу, ошибки, потерю данных или даже препятствовать загрузке устройства. Посетите страницу «&lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Введение в ART&lt;/a&gt;» (на английском языке) для получения подробных сведений.&lt;br/&gt;&lt;br/&gt;Мы просим не присылать баг-репорты, если вы выбрали ART в качестве среды выполнения системы.&lt;br/&gt;&lt;br/&gt;Вы действительно хотите перезагрузить устройство и переключить среду выполнения с «<xliff:g id="old" example="libdvm.so">%1$s</xliff:g>» на «<xliff:g id="new" example="libart.so">%2$s</xliff:g>»?</string>
 
     <string name="performance_settings_title">Производительность</string>
     <string name="performance_settings_warning_title">Соблюдайте осторожность</string>
@@ -688,11 +688,11 @@
     <string name="cmupdate_settings_title">Обновления системы</string>
     <string name="cmupdate_settings_summary">Проверка и установка доступных обновлений</string>
 
-    <string name="anonymous_notification_desc">Анонимная статистика CyanFox</string>
+    <string name="anonymous_notification_desc">Анонимная статистика XPerience</string>
     <string name="anonymous_statistics_title">Отправка статистики</string>
     <string name="anonymous_statistics_summary">Помогите сделать CM лучше, включив отправку анонимных отчётов</string>
     <string name="anonymous_statistics_warning_title">Информация об использовании</string>
-    <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам CyanFox отслеживать установки на различные устройства. Отсылаемая информацию включает в себя название устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.</string>
+    <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам XPerience отслеживать установки на различные устройства. Отсылаемая информацию включает в себя название устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.</string>
     <string name="anonymous_learn_more">Подробнее</string>
     <string name="enable_reporting_title">Включить отправку отчётов</string>
     <string name="preview_data_title">Просмотр отправляемых данных</string>
@@ -709,13 +709,13 @@
     <string name="changelog_unknown">Неизвестно</string>
     <string name="changelog_version">Версия</string>
 
-    <string name="cmlicense_title">Политика конфиденциальности CyanFox</string>
-    <string name="settings_cmlicense_activity_title">Политика конфиденциальности CyanFox</string>
+    <string name="cmlicense_title">Политика конфиденциальности XPerience</string>
+    <string name="settings_cmlicense_activity_title">Политика конфиденциальности XPerience</string>
     <string name="settings_cmlicense_activity_unreachable">Устройство не подключено к Интернету. Чтобы просмотреть эту информацию, откройте страницу %s на любом компьютере с интернет-доступом.</string>
 
     <string name="cpu_info">Процессор</string>
     <string name="mem_info">Память</string>
-    <string name="mod_version">Версия CyanFox</string>
+    <string name="mod_version">Версия XPerience</string>
     <string name="mod_version_default">Неизвестно</string>
     <string name="build_date">Дата сборки</string>
 

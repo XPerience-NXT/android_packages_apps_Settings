@@ -339,20 +339,20 @@ Ryškumo kreivė apskaičiuojama atliekant kubinę \„spline\“ interpoliacij�
     <string name="quiet_hours_active_to">iki</string>
     <string name="start_time_title">Pradėti</string>
     <string name="end_time_title">Baigti</string>
-    <string name="mod_version">CyanFox versija</string>
+    <string name="mod_version">XPerience versija</string>
     <string name="mod_version_default">Nežinoma</string>
     <string name="build_date">Surinkimo data</string>
     <string name="cpu_info">Procesorius</string>
     <string name="mem_info">Atmintis</string>
-    <string name="anonymous_statistics_title">CyanFox statistika</string>
-    <string name="anonymous_statistics_summary">Padėkite tobulinti CyanFox įjungdami statistikos raportavimą</string>
+    <string name="anonymous_statistics_title">XPerience statistika</string>
+    <string name="anonymous_statistics_summary">Padėkite tobulinti XPerience įjungdami statistikos raportavimą</string>
     <string name="anonymous_statistics_warning_title">Apie</string>
-    <string name="anonymous_statistics_warning">Raportuojant CyanFox statistika nebus renkama Jūsų asmeninė informacija, o tik sistemos darbas bei klaidos. Ši informacija padės kūrėjams tobulinti CyanFox bei šalinti klaidas.</string>
+    <string name="anonymous_statistics_warning">Raportuojant XPerience statistika nebus renkama Jūsų asmeninė informacija, o tik sistemos darbas bei klaidos. Ši informacija padės kūrėjams tobulinti XPerience bei šalinti klaidas.</string>
     <string name="enable_reporting_title">Įjungti raportavimą</string>
     <string name="preview_data_title">Žiūrėti duomenis</string>
     <string name="view_stats_title">Žiūrėti statistiką</string>
     <string name="anonymous_learn_more">Sužinokite daugiau</string>
-    <string name="anonymous_notification_desc">Įjunkite ar išjunkite CyanFox statistiką</string>
+    <string name="anonymous_notification_desc">Įjunkite ar išjunkite XPerience statistiką</string>
     <string name="preview_id_title">Unikalus ID</string>
     <string name="preview_device_title">Įrenginys</string>
     <string name="preview_version_title">Versija</string>
@@ -387,7 +387,7 @@ Ryškumo kreivė apskaičiuojama atliekant kubinę \„spline\“ interpoliacij�
     <string name="changelog_error">Nepavyko parodyti sąrašo</string>
     <string name="changelog_unknown">Nežinomas</string>
     <string name="changelog_version">Versija</string>
-    <string name="cmupdate_settings_title">CyanFox atnaujinimai</string>
+    <string name="cmupdate_settings_title">XPerience atnaujinimai</string>
     <string name="cmupdate_settings_summary">Tikrinti, žiūrėti ar įdiegti atnaujinimus</string>
     <string name="advanced_settings_title">Išplėstinis</string>
     <string name="development_tools_title">Kūrėjo parinktis</string>
@@ -651,13 +651,13 @@ spaudimas įjungs/sustabdys atkuriamą įrašą</string>
     <string name="whisperpush_registration_summary">WhisperPush registracija, norint įjungti šifruotus SMS.</string>
     <string name="whisperpush_identitykey_title">Peržiūrėti tapatybės raktus</string>
     <string name="custom_runtime_warning_title">Įspėjimas</string>
-    <string name="custom_runtime_warning_message">ART nepalaiko CyanFox. Ši nuostata yra įtraukta tik ekspermentiniais tikslais, tai gali sukelti nestabilumą, duomenų praradimą ar sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškylusias klaidas.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART nepalaiko XPerience. Ši nuostata yra įtraukta tik ekspermentiniais tikslais, tai gali sukelti nestabilumą, duomenų praradimą ar sutrikdyti tinkamą jūsų prietaiso įsijungimą. Apsilankykite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;ART supažindinimas&lt;/a&gt; dėl daugiau informacijos.&lt;br/&gt;&lt;br/&gt;Jei įjungėte ART, prašome nepranešinėti apie iškylusias klaidas.&lt;br/&gt;&lt;br/&gt;Ar tikrai norite perkrauti ir pakeisti iš <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> į <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
     <string name="gps_download_data_wifi_only">Parsisiųsti GPS pagalbinius duomenis tik per Wi-Fi tinklus</string>
     <string name="battery_info_status_charging_dock_ac">(DokasAC)</string>
     <string name="battery_info_status_charging_dock_usb">(DokasUSB)</string>
     <string name="menu_stats_reset">Atkurti</string>
-    <string name="cmlicense_title">Teisinė CyanFox informacija</string>
-    <string name="settings_cmlicense_activity_title">Teisinė CyanFox informacija</string>
+    <string name="cmlicense_title">Teisinė XPerience informacija</string>
+    <string name="settings_cmlicense_activity_title">Teisinė XPerience informacija</string>
     <string name="settings_cmlicense_activity_unreachable">Nesate prisijungę prie duomenų paslaugos. Jei norite peržiūrėti šią informaciją dabar, apsilankykite šiuo adresu %s naudodami bet kurį prie interneto prijungtą kompiuterį.</string>
     <string name="stylus_icon_enabled_title">Rodyti rašiklio piktogramą</string>
     <string name="stylus_icon_enabled_summary">Rodyti piktogramą, kai naudojamas rašiklis</string>

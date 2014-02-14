@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2012-2013 The CyanogenMod Project
+     Copyright (C) 2014 The XPerience Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -304,7 +305,7 @@
 
     <!-- Waiver -->
     <string name="cyanogenmod_waiver_title">Waiver</string>
-    <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanFox and its contributors from all legal liabilities.</string>
+    <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless XPerienceFox and its contributors from all legal liabilities.</string>
 
     <!-- Quick settings panel  -->
     <string name="quick_settings_panel_title">Quick Settings panel</string>
@@ -484,7 +485,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="end_time_title">End</string>
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">CyanFox version</string>
+    <string name="mod_version">XPerience version</string>
     <string name="mod_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Build date</string>
@@ -497,11 +498,11 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Anonymous Statistics #CM -->
     <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
-    <string name="anonymous_statistics_title">CyanFox statistics</string>
-    <string name="anonymous_statistics_summary">Help make CyanFox better by opting into anonymous statistics reporting</string>
+    <string name="anonymous_statistics_title">XPerience statistics</string>
+    <string name="anonymous_statistics_summary">Help make XPerience better by opting into anonymous statistics reporting</string>
     <string name="anonymous_statistics_warning_title">About</string>
-    <string name="anonymous_statistics_warning">Opting into CyanFox Statistics will allow non-personal data to be submitted to the
-        developers of CyanFox to track unique installations across devices. The information submitted includes an unique identifier,
+    <string name="anonymous_statistics_warning">Opting into XPerience Statistics will allow non-personal data to be submitted to the
+        developers of XPerience to track unique installations across devices. The information submitted includes an unique identifier,
         which does not compromise your privacy or personal data. The data is submitted during each boot.\n\nFor an example of the data that is submitted, tap on Preview Data.</string>
     <string name="enable_reporting_title">Enable reporting</string>
     <string name="preview_data_title">Preview data</string>
@@ -510,7 +511,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="anonymous_learn_more">Learn more</string>
 
     <!-- Anonymous Statistics - Notification -->
-    <string name="anonymous_notification_desc">Enable or Disable CyanFox Statistics</string>
+    <string name="anonymous_notification_desc">Enable or Disable XPerience Statistics</string>
 
     <!-- Anonymous Statistics - Preview -->
     <string name="preview_id_title">Unique ID</string>
@@ -840,8 +841,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
 
-    <!-- DarkFox (TRDS) Settings -->
-    <string name="trds_settings_title">Dark UI</string>
+    <!-- XPerience in the DarkNess (TRDS) Settings -->
+    <string name="trds_settings_title">XPerience in The DarkNess</string>
 
     <!-- Lock screen buttons -->
     <string name="lockscreen_buttons_title">Button actions</string>
@@ -995,7 +996,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
 
     <!-- Message of dialog confirming that user wants to restart their device with a new runtime -->
     <string name="custom_runtime_warning_title">Warning</string>
-    <string name="custom_runtime_warning_message">ART is not supported by CyanFox. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART is not supported by XPerience. This setting is included for experimentation only and has the potential to cause instability, crashes, data loss or prevent the proper boot of your device. Visit &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt; for more information.&lt;br/&gt;&lt;br/&gt;We request you do not file bug reports if you have enabled ART as your runtime.&lt;br/&gt;&lt;br/&gt;Are you sure you want to reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
 
     <!-- GPS download data over wi-fi only -->
     <string name="gps_download_data_wifi_only">Download GPS assisted data only over Wi-Fi networks</string>
@@ -1009,8 +1010,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="menu_stats_reset">Reset</string>
 
     <!-- CM Legal -->
-    <string name="cmlicense_title">CyanFox Legal</string>
-    <string name="settings_cmlicense_activity_title">CyanFox Legal</string>
+    <string name="cmlicense_title">XPerience Legal</string>
+    <string name="settings_cmlicense_activity_title">XPerience Legal</string>
     <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
 
     <!-- General strings -->
@@ -1046,7 +1047,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="battery_prefs_title">Options</string>
     <string name="battery_stats_title">Statistics</string>
 
-    <!-- CyanFox custom settings headers -->
+    <!-- XPerience custom settings headers -->
     <string name="header_category_general_settings">General</string>
     <string name="header_category_extra_settings">Extra</string>
     <string name="camera_sounds_title">Camera shutter sound</string>
@@ -1153,8 +1154,42 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="app_ops_reset_confirm_title">Confirm counters reset</string>
     <string name="app_ops_reset_confirm_mesg">Are you sure you wish to reset AppOps counters ?</string>
 
+    <!-- ListView animation -->
+    <string name="listview_animation_title">ListView animation</string>
+    <string name="listview_off">Off</string>
+    <string name="listview_wave_left">Wave (left)</string>
+    <string name="listview_wave_right">Wave (right)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string> 
+    <string name="listview_stack_top">Stack (top)</string>
+    <string name="listview_stack_bottom">Stack (bottom)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string> 
+    <string name="listview_translate_left">Translate (left)</string>
+    <string name="listview_translate_right">Translate (right)</string>
+    <string name="listview_rotate">Rotate</string>
+
+    <!-- ListView interpolator -->
+    <string name="listview_interpolator_title">ListView interpolator</string>
+    <string name="listview_accelerate_interpolator">Accelerate</string>
+    <string name="listview_decelerate_interpolator">Decelerate</string>
+    <string name="listview_accelerate_decelerate_interpolator">Accelerate decelerate</string>
+    <string name="listview_anticipate_interpolator">Anticipate</string>
+    <string name="listview_overshoot_interpolator">Overshoot</string>
+    <string name="listview_anticipate_overshoot_interpolator">Anticipate overshoot</string>
+    <string name="listview_bounce_interpolator">Bounce</string>
+
+    <!-- Other Settings Category -->
+    <string name="other_category">Animator</string>
+
      <!--Lockscreen See Through-->
      <string name="see_through_title">See through</string>
      <string name="see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
+
+   <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Show CPU info</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
+    <string name="xperience_catego"> XPerience Category</string>
 
 </resources>

@@ -58,6 +58,35 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
+    <!-- INTERFACE -->
+    <header android:id="@+id/interface_section"
+        android:title="@string/header_category_interface" />
+
+    <!-- Themes -->
+
+    <header
+        android:id="@+id/themes_settings"
+        android:icon="@drawable/ic_settings_themes"
+        android:title="@string/themes_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.tmobile.themechooser"
+            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+    </header>
+
+    <!-- System UI -->
+    <header
+        android:id="@+id/system_settings"
+        android:icon="@drawable/ic_settings_system"
+        android:fragment="com.android.settings.cyanogenmod.SystemUiSettings"
+        android:title="@string/system_settings_title" />
+
+    <!-- The Real Dark XPerience (TRDS) Settings -->
+    <header
+        android:id="@+id/trds_settings"
+        android:title="@string/trds_settings_title" />
+     <!--   android:icon="@drawable/ic_settings_trds"-->
+
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />

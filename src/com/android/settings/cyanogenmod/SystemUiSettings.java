@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod project
+ * Copyright (C) 2014 The XPerience project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,6 +41,11 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String CATEGORY_GENERAL = "cat_general";
     private static final String CATEGORY_EXTRA = "cat_extra";
     private static final String CATEGORY_NAVBAR = "navigation_bar";
+
+    // ListView Animations Key
+    private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
+    private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+
     private static final String KEY_EXPANDED_DESKTOP = "expanded_desktop";
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
@@ -47,6 +53,10 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
 
     // Enable/disable nav bar  
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar";
+
+    // ListView Animations Preference
+    private ListPreference mListViewAnimation;
+    private ListPreference mListViewInterpolator;
 
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
@@ -66,6 +76,21 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_GENERAL);
         final PreferenceCategory extraCat =
                 (PreferenceCategory) prefScreen.findPreference(CATEGORY_EXTRA);
+
+        // ListView Animations
+        mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
+        int listviewanimation = Settings.System.getInt(getContentResolver(),
+                Settings.System.LISTVIEW_ANIMATION, 1);
+        mListViewAnimation.setValue(String.valueOf(listviewanimation));
+        mListViewAnimation.setSummary(mListViewAnimation.getEntry());
+        mListViewAnimation.setOnPreferenceChangeListener(this);
+
+        mListViewInterpolator = (ListPreference) findPreference(KEY_LISTVIEW_INTERPOLATOR);
+        int listviewinterpolator = Settings.System.getInt(getContentResolver(),
+                Settings.System.LISTVIEW_INTERPOLATOR, 0);
+        mListViewInterpolator.setValue(String.valueOf(listviewinterpolator));
+        mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
+        mListViewInterpolator.setOnPreferenceChangeListener(this);
 
         // Expanded desktop
         mExpandedDesktopPref = (ListPreference) findPreference(KEY_EXPANDED_DESKTOP);
@@ -121,6 +146,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private void updateNavbarPreferences(boolean show) {}
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        ContentResolver resolver = getContentResolver();
         if (preference == mExpandedDesktopPref) {
             int expandedDesktopValue = Integer.valueOf((String) objValue);
             updateExpandedDesktop(expandedDesktopValue);
@@ -136,8 +162,21 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
                     ((Boolean) objValue) ? 1 : 0);
             updateNavbarPreferences((Boolean) objValue);
             return true;
-        }
-
+        } else if (preference == mListViewAnimation) {
+            int listviewanimation = Integer.valueOf((String) objValue);
+            int index = mListViewAnimation.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver, Settings.System.LISTVIEW_ANIMATION,
+                    listviewanimation);
+            mListViewAnimation.setSummary(mListViewAnimation.getEntries()[index]);
+            return true;
+        } else if (preference == mListViewInterpolator) {
+            int listviewinterpolator = Integer.valueOf((String) objValue);
+            int index = mListViewInterpolator.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver, Settings.System.LISTVIEW_INTERPOLATOR,
+                    listviewinterpolator);
+            mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true; 
+}
         return false;
     }
 

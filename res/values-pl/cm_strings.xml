@@ -210,7 +210,7 @@
     <string name="lockscreen_enable_camera_title">Widżet kamery</string>
     <string name="safe_headset_volume_title">Bezpieczna głośność słuchawek</string>
     <string name="cyanogenmod_waiver_title">Zrzeczenie się</string>
-    <string name="cyanogenmod_waiver_body">Zmiana tych ustawień może być niezgodna z lokalnym prawem.\n\nWybierając \'OK\' przyjmujesz to ostrzeżenie do wiadomości oraz odciążasz CyanFox i jego twórców od wszystkich konsekwencji prawnych.</string>
+    <string name="cyanogenmod_waiver_body">Zmiana tych ustawień może być niezgodna z lokalnym prawem.\n\nWybierając \'OK\' przyjmujesz to ostrzeżenie do wiadomości oraz odciążasz XPerience i jego twórców od wszystkich konsekwencji prawnych.</string>
     <string name="quick_settings_panel_title">Panel szybkich ustawień</string>
     <string name="title_static_tiles">Statyczne przełączniki</string>
     <string name="tile_picker_title">Przełączniki i ich układ</string>
@@ -357,20 +357,20 @@ dwa nowe, odpowiadające kolejnym punktom kontrolnym. \'Usuń\' kasuje wybrany p
     <string name="quiet_hours_active_to">do</string>
     <string name="start_time_title">Początek</string>
     <string name="end_time_title">Koniec</string>
-    <string name="mod_version">Wersja CyanFox</string>
+    <string name="mod_version">Wersja XPerience</string>
     <string name="mod_version_default">Nieznana</string>
     <string name="build_date">Data kompilacji</string>
     <string name="cpu_info">Procesor</string>
     <string name="mem_info">Pamięć</string>
-    <string name="anonymous_statistics_title">Statystyki CyanFox</string>
-    <string name="anonymous_statistics_summary">Pomóż ulepszyć CyanFox, pozwalając na wysyłanie anonimowych statystyk</string>
+    <string name="anonymous_statistics_title">Statystyki XPerience</string>
+    <string name="anonymous_statistics_summary">Pomóż ulepszyć XPerience, pozwalając na wysyłanie anonimowych statystyk</string>
     <string name="anonymous_statistics_warning_title">Informacje</string>
-    <string name="anonymous_statistics_warning">Udział w statystykach zezwoli na przesyłanie anonimowych danych twórcom CyanFoxa w celu badania liczby aktywnych urządzeń. Raport zawiera unikatowy ID, który nie zagraża Twojej prywatności ani danym osobowym. Dane są przesyłane przy każdym uruchomieniu.\n\nAby zobaczyć przykładowe wysyłane informacje, podejrzyj swoje dane.</string>
+    <string name="anonymous_statistics_warning">Udział w statystykach zezwoli na przesyłanie anonimowych danych twórcom XPeriencea w celu badania liczby aktywnych urządzeń. Raport zawiera unikatowy ID, który nie zagraża Twojej prywatności ani danym osobowym. Dane są przesyłane przy każdym uruchomieniu.\n\nAby zobaczyć przykładowe wysyłane informacje, podejrzyj swoje dane.</string>
     <string name="enable_reporting_title">Włącz raportowanie</string>
     <string name="preview_data_title">Podejrzyj swoje dane</string>
     <string name="view_stats_title">Zobacz statystyki</string>
     <string name="anonymous_learn_more">Dowiedz się więcej</string>
-    <string name="anonymous_notification_desc">Włącz lub wyłącz statystyki CyanFox</string>
+    <string name="anonymous_notification_desc">Włącz lub wyłącz statystyki XPerience</string>
     <string name="preview_id_title">Unikatowy ID</string>
     <string name="preview_device_title">Urządzenie</string>
     <string name="preview_version_title">Wersja</string>
@@ -405,7 +405,7 @@ dwa nowe, odpowiadające kolejnym punktom kontrolnym. \'Usuń\' kasuje wybrany p
     <string name="changelog_error">Nie można wczytać listy zmian</string>
     <string name="changelog_unknown">Nieznane</string>
     <string name="changelog_version">Wersja</string>
-    <string name="cmupdate_settings_title">Aktualizacje CyanFox</string>
+    <string name="cmupdate_settings_title">Aktualizacje XPerience</string>
     <string name="cmupdate_settings_summary">Znajdź i zainstaluj dostępne aktualizacje</string>
     <string name="advanced_settings_title">Zaawansowane</string>
     <string name="development_tools_title">Narzędzia uruchamiania</string>
@@ -669,13 +669,13 @@ dwa nowe, odpowiadające kolejnym punktom kontrolnym. \'Usuń\' kasuje wybrany p
     <string name="whisperpush_registration_summary">Zarejestruj się w WhisperPush aby aktywować szyfrowane SMS\'y.</string>
     <string name="whisperpush_identitykey_title">Przejrzyj klucze uwierzytelniające</string>
     <string name="custom_runtime_warning_title">Ostrzeżenie</string>
-    <string name="custom_runtime_warning_message">ART nie jest wspierany przez CyanFox. To ustawienie jest eksperymentalne i może powodować braki stabilności, błędy w działaniu niektórych aplikacji, utratę danych lub spowodować brak możliwości włączenia urządzenia. Po więcej informacji odwiedź &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Prosimy o nieprzesyłanie raportów o błędach jeśli ART jest aktywowany.&lt;br/&gt;&lt;br/&gt;Czy jesteś pewień, że chcesz zrestartować urządzenie w celu zmiany <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+    <string name="custom_runtime_warning_message">ART nie jest wspierany przez XPerience. To ustawienie jest eksperymentalne i może powodować braki stabilności, błędy w działaniu niektórych aplikacji, utratę danych lub spowodować brak możliwości włączenia urządzenia. Po więcej informacji odwiedź &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Prosimy o nieprzesyłanie raportów o błędach jeśli ART jest aktywowany.&lt;br/&gt;&lt;br/&gt;Czy jesteś pewień, że chcesz zrestartować urządzenie w celu zmiany <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> na <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
     <string name="gps_download_data_wifi_only">Pobieraj dane wspomagające GPS tylko przez sieci Wi-Fi</string>
     <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
     <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
     <string name="menu_stats_reset">Zresetuj</string>
-    <string name="cmlicense_title">Informacje prawne CyanFox</string>
-    <string name="settings_cmlicense_activity_title">Informacje prawne CyanFox</string>
+    <string name="cmlicense_title">Informacje prawne XPerience</string>
+    <string name="settings_cmlicense_activity_title">Informacje prawne XPerience</string>
     <string name="settings_cmlicense_activity_unreachable">Nie masz połączenia z internetem. Aby zobaczyć te informacje przejdź do %s z dowolnego komputera podłączonego do internetu</string>
     <string name="stylus_icon_enabled_title">Pokaz ikonę podczas używania rysika</string>
     <string name="stylus_icon_enabled_summary">Pokaż ikonę wskaźnika podczas wskazywania lub rysowania rysikiem</string>
