@@ -17,12 +17,15 @@
 
     <string name="cyanogenmod_waiver_title">Отказ от ответственности</string>
     <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете XPerience и всех его разработчиков от любых юридических обязательств.</string>
+<<<<<<< HEAD
 
     <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете CyanogenMod и всех его разработчиков от любых юридических обязательств.</string>
     <string name="ok">OK</string>
     <string name="battery_info_status_charging_dock_ac">(док-станция, от сети)</string>
     <string name="battery_info_status_charging_dock_usb">(док-станция, по USB)</string>
     <string name="intent_sender_data_label"><xliff:g id="data">Данные:</xliff:g></string>
+=======
+>>>>>>> cd511cf299bdcf35aaeff215859727e643ddc062
 
     <string name="wifi_disabled_association_rejected">Соединение отклонено</string>
     <string name="wifi_setting_countrycode_title">Код региона Wi-Fi</string>
