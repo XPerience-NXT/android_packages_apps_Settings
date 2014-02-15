@@ -714,8 +714,6 @@ controle adicionais. \'Remover\' apaga a linha selecionada.
     <string name="screen_animation_style_electronbeam">Feixe de elétrons</string>
     <string name="screen_animation_style_fade">Esmaecer</string>
     <string name="double_tap_to_wake_title">Toque duplo para acordar</string>
-
-</resources>
     <string name="app_ops_summaries_wifi_change">modificar wifi</string>
     <string name="app_ops_labels_wifi_change">Modificar Wi-Fi</string>
     <string name="app_ops_summaries_bluetooth_change">modificar bluetooth</string>
