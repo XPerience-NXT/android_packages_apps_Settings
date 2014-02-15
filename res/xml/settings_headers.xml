@@ -58,34 +58,16 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
-    <!-- INTERFACE -->
+    <!-- INTERFACE 
     <header android:id="@+id/interface_section"
         android:title="@string/header_category_interface" />
 
-    <!-- Themes -->
-
-    <header
-        android:id="@+id/themes_settings"
-        android:icon="@drawable/ic_settings_themes"
-        android:title="@string/themes_settings_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.tmobile.themechooser"
-            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
-    </header>
-
-    <!-- System UI -->
+    <!-- System UI 
     <header
         android:id="@+id/system_settings"
         android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.cyanogenmod.SystemUiSettings"
-        android:title="@string/system_settings_title" />
-
-    <!-- The Real Dark XPerience (TRDS) Settings -->
-    <header
-        android:id="@+id/trds_settings"
-        android:title="@string/trds_settings_title" />
-     <!--   android:icon="@drawable/ic_settings_trds"-->
+        android:title="@string/system_settings_title" />-->
 
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
@@ -104,6 +86,24 @@
         android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.cyanogenmod.SystemUiSettings"
         android:title="@string/system_settings_title" />
+
+    <header
+        android:id="@+id/xpe_settings"
+        android:icon="@drawable/ic_settings_system"
+        android:fragment="com.android.settings.xperience.xperience"
+        android:title="@string/xpe_title" />
+
+    <!-- Themes -->
+
+    <header
+        android:id="@+id/themes_settings"
+        android:icon="@drawable/ic_settings_themes"
+        android:title="@string/themes_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.tmobile.themechooser"
+            android:targetClass="com.tmobile.themechooser.ThemeChooser" />
+    </header>
 
     <!-- Sound -->
     <header
@@ -194,11 +194,11 @@
         android:title="@string/location_settings_title"
         android:id="@+id/location_settings" />
 
-    <!-- DarkFox (TRDS) Settings -->
+    <!-- The Real Dark XPerience (TRDS) Settings -->
     <header
         android:id="@+id/trds_settings"
-        android:icon="@drawable/ic_settings_trds"
         android:title="@string/trds_settings_title" />
+     <!--   android:icon="@drawable/ic_settings_trds"-->
 
     <!-- Security -->
     <header
@@ -270,12 +270,12 @@
         android:icon="@*android:drawable/ic_print"
         android:title="@string/print_settings" />
 
-    <!-- Screen recorder -->
+    <!-- Screen recorder 
     <header
         android:id="@+id/screen_recorder_settings"
         android:icon="@drawable/ic_settings_screen_recorder"
         android:title="@string/screen_recorder_title"
-        android:fragment="com.android.settings.cyanogenmod.ScreenRecorderSettings" />
+        android:fragment="com.android.settings.cyanogenmod.ScreenRecorderSettings" />-->
 
     <!-- Development -->
     <header
