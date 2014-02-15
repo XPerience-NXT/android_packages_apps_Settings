@@ -17,8 +17,7 @@
 
     <string name="cyanogenmod_waiver_title">Отказ от ответственности</string>
     <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете XPerience и всех его разработчиков от любых юридических обязательств.</string>
-    <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете CyanogenMod и всех его разработчиков от любых юридических обязательств.</string>
-    <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете CyanFox и всех его разработчиков от любых юридических обязательств.</string>
+    <string name="cyanogenmod_waiver_body">Изменение этих настроек может противоречить законам вашего государства.\n\nНажимая «OK», вы соглашаетесь с этим предупреждением и освобождаете XPerience и всех его разработчиков от любых юридических обязательств.</string>
     <string name="ok">OK</string>
     <string name="battery_info_status_charging_dock_ac">(док-станция, от сети)</string>
     <string name="battery_info_status_charging_dock_usb">(док-станция, по USB)</string>
@@ -751,7 +750,7 @@
 
     <string name="anonymous_notification_desc">Анонимная статистика XPerience</string>
     <string name="anonymous_statistics_title">Отправка статистики</string>
-    <string name="anonymous_statistics_summary">Помогите сделать CF лучше, включив отправку анонимных отчётов</string>
+    <string name="anonymous_statistics_summary">Помогите сделать XPe лучше, включив отправку анонимных отчётов</string>
     <string name="anonymous_statistics_warning_title">Информация об использовании</string>
     <string name="anonymous_statistics_warning">Анонимные отчёты позволяют разработчикам XPerience отслеживать установки на различные устройства. Отсылаемая информацию включает в себя название устройства, версию прошивки и уникальный идентификатор, отправка которого никаким образом не вредит Вашей конфиденциальности. Отчёт отсылается при каждой загрузке устройства.</string>
     <string name="anonymous_learn_more">Подробнее</string>
