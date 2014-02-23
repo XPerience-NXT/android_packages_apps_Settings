@@ -34,7 +34,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class SystemUiSettings extends SettingsPreferenceFragment  implements
+public class SystemUiSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String TAG = "SystemSettings";
 
@@ -51,7 +51,7 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
 
-    // Enable/disable nav bar  
+    // Enable/disable nav bar
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar";
 
     // ListView Animations Preference
