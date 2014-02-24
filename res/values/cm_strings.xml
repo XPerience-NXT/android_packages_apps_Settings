@@ -1222,4 +1222,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="show_cpu_info_summary">Screen overlay showing current CPU info</string>
     <string name="xperience_catego"> XPerience Category</string>
 
+    <!-- EdgeGesture service -->
+    <string name="edge_gesture_service_title">Block gesture touch events</string>
+    <string name="edge_gesture_service_summary">Don\'t send touch events for navigation and status bar gestures to apps</string>
+
+
 </resources>
