@@ -116,8 +116,8 @@ public class SystemUiSettings extends SettingsPreferenceFragment implements
                 generalCat.removePreference(mExpandedDesktopNoNavbarPref);
 
                 if (!Utils.isPhone(getActivity())) {
-                    PreferenceCategory navCategory =
-                            (PreferenceCategory) findPreference(CATEGORY_NAVBAR);
+                    PreferenceScreen navCategory =
+                            (PreferenceScreen) findPreference(CATEGORY_NAVBAR);
                     navCategory.removePreference(mNavigationBarLeftPref);
                 }
             } else {
