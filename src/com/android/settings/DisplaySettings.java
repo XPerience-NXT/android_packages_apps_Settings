@@ -17,7 +17,7 @@
 package com.android.settings;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
-import static android.provider.Settings.System.SCREEN_ANIMATION_STYLE;
+import static android.provider.Settings.System.SCREEN_ANIMATION;
 
 import android.app.ActivityManagerNative;
 import android.app.Dialog;
@@ -63,6 +63,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_SCREEN_SAVER = "screensaver";
+    private static final String KEY_SCREEN_OFF_ANIMATION = "screen_off_animation";
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
     private static final String KEY_ADVANCED_DISPLAY_SETTINGS = "advanced_display_settings";
@@ -76,6 +77,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_ANIMATION_STYLE = "screen_animation_style";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
+
+    private ListPreference mScreenOffAnimationPreference;
 
     private CheckBoxPreference mAccelerometer;
     private FontDialogPreference mFontSizePref;
@@ -136,6 +139,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         disableUnusableTimeouts(mScreenTimeoutPreference);
         updateTimeoutPreferenceDescription(currentTimeout);
         updateDisplayRotationPreferenceDescription();
+
+        mScreenOffAnimationPreference = (ListPreference) findPreference(KEY_SCREEN_OFF_ANIMATION);
+        final int currentAnimation = Settings.System.getInt(resolver, SCREEN_OFF_ANIMATION,
+                1 /* CRT-off */);
+        mScreenOffAnimationPreference.setValue(String.valueOf(currentAnimation));
+        mScreenOffAnimationPreference.setOnPreferenceChangeListener(this);
+        updateScreenOffAnimationPreferenceDescription(currentAnimation);
 
         mFontSizePref = (FontDialogPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
@@ -257,6 +267,24 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         summary.append(" " + getString(R.string.display_rotation_unit));
         mDisplayRotationPreference.setSummary(summary);
     }
+
+    private void updateScreenOffAnimationPreferenceDescription(int currentAnim) {
+        ListPreference preference = mScreenOffAnimationPreference;
+        String summary;
+        if (currentAnim < 0) {
+            // Unsupported value
+            summary = "";
+        } else {
+            final CharSequence[] entries = preference.getEntries();
+            final CharSequence[] values = preference.getEntryValues();
+            if (entries == null || entries.length == 0) {
+                summary = "";
+            } else {
+                summary = entries[currentAnim].toString();
+            }
+        }
+        preference.setSummary(summary);
+   }
 
     private void updateTimeoutPreferenceDescription(long currentTimeout) {
         ListPreference preference = mScreenTimeoutPreference;
@@ -492,14 +520,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         if (KEY_FONT_SIZE.equals(key)) {
             writeFontSizePreference(objValue);
+
         }
-        if (KEY_SCREEN_ANIMATION_STYLE.equals(key)) {
+        if (KEY_SCREEN_OFF_ANIMATION.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {
-                Settings.System.putInt(getContentResolver(), SCREEN_ANIMATION_STYLE, value);
-                updateScreenAnimationStylePreferenceDescription(value);
+                Settings.System.putInt(getContentResolver(), SCREEN_OFF_ANIMATION, value);
+                updateScreenOffAnimationPreferenceDescription(value);
             } catch (NumberFormatException e) {
-                Log.e(TAG, "could not persist screen animation style setting", e);
+                Log.e(TAG, "could not persist screen-off animation setting", e);
             }
         }
 

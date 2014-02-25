@@ -16,13 +16,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="xpe_title"> XPerience Settings </string>
-    <string name="other_category2"> Animations </string>
+    <string name="xpe_title"> Ajustes XPerience </string>
+    <string name="other_category2"> Animaciones </string>
 
 	 <!-- Screen off animation -->
-    <string name="screen_off_animation_animation">Screen-off animation</string>
-    <string name="screen_off_animation_fadeout">Fade out</string>
-    <string name="screen_off_animation_electronbeam">Electron beam</string>
-    <string name="screen_off_animation_scaledown">Scale down</string>
-    <string name="screen_off_animation_turnoff">Turn off</string>
+    <string name="screen_off_animation_title">Animacion de apagado de pantalla</string>
+    <string name="screen_off_animation_fadeout">Desaparecer</string>
+    <string name="screen_off_animation_electronbeam">Haz de electrones</string>
+    <string name="screen_off_animation_scaledown">Reducir proporcionalmente</string>
+    <string name="screen_off_animation_turnoff">Apagar</string>
 </resources>
