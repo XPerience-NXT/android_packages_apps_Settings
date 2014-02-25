@@ -100,7 +100,7 @@
 
         <PreferenceScreen
             android:key="recents_ram_bar"
-            android:fragment="com.android.settings.cyanogenmod.RamBar"
+            android:fragment="com.android.settings.xperience.RamBar"
             android:title="@string/ram_bar" /> 
 
         <!-- Device Specific Touchscreen gestures. Avoid duplicating CMHW functionality, please -->
