@@ -46,5 +46,4 @@
     <color name="auto_brightness_preview_markers">@android:color/holo_blue_light</color>
     <color name="auto_brightness_preview_grid">#44ffffff</color>
 
-    <color name="tab_selector">#FFFFFFFF</color>
 </resources>
