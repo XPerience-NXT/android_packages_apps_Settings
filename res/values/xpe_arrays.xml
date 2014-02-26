@@ -73,7 +73,7 @@
 	<!--Screen-off Animations-->
     <string-array name="screen_off_animation_entries">
 	<item>@string/screen_off_animation_fadeout</item>
-	<item>@string/screen_off_animation_electronbean</item>
+	<item>@string/screen_off_animation_electronbeam</item>
 	<item>@string/screen_off_animation_scaledown</item>
 	<item>@string/screen_off_animation_turnoff</item>
     </string-array>
