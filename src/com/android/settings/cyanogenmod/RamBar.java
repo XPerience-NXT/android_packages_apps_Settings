@@ -198,7 +198,7 @@ public class RamBar extends SettingsPreferenceFragment implements OnPreferenceCh
         mRamBarTotalMemColor.setNewPreviewColor(DEFAULT_MEM_COLOR);
         String hexColor = String.format("#%08x", (0xffffffff & DEFAULT_ACTIVE_APPS_COLOR));
         mRamBarAppMemColor.setSummary(hexColor);
-        hexColor = String.format("#%08x", (0xffffffff & DEFAULT_ACTIVE_APPS_COLOR));
+        hexColor = String.format("#%08x", (0xffdddddd & DEFAULT_CACHE_COLOR));
         mRamBarCacheMemColor.setSummary(hexColor);
         hexColor = String.format("#%08x", (0xffffffff & DEFAULT_MEM_COLOR));
         mRamBarTotalMemColor.setSummary(hexColor);
