@@ -50,7 +50,6 @@ public class SystemUiSettings extends SettingsPreferenceFragment implements
     private static final String KEY_EXPANDED_DESKTOP_NO_NAVBAR = "expanded_desktop_no_navbar";
 
     private static final String CATEGORY_EXPANDED_DESKTOP = "expanded_desktop_category";
-    private static final String CATEGORY_NAVBAR = "navigation_bar";
 
     private static final String KEY_SCREEN_GESTURE_SETTINGS = "touch_screen_gesture_settings";
     private static final String KEY_NAVIGATION_BAR_LEFT = "navigation_bar_left";
