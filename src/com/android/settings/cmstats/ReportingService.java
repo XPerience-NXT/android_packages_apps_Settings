@@ -115,7 +115,11 @@ public class ReportingService extends Service {
 
             // report to the cfstats service
             HttpClient httpClient = new DefaultHttpClient();
+<<<<<<< HEAD
             HttpPost httpPost = new HttpPost("http://klozz.byethost12.com/stats/submit.php");
+=======
+            HttpPost httpPost = new HttpPost("https://stats.cyanogenmod.org/submit");
+>>>>>>> 750ae1067871c7e481165db01ed3c5c0a1152549
             boolean success = false;
 
             try {
