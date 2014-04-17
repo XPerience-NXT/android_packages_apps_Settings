@@ -886,11 +886,8 @@ public class Settings extends PreferenceActivity
             } else if (header.id == R.id.wifi_settings
                     || header.id == R.id.bluetooth_settings
                     || header.id == R.id.profiles_settings
-<<<<<<< HEAD
                     || header.id == R.id.trds_settings
-=======
                     || header.id == R.id.voice_wakeup_settings
->>>>>>> 750ae1067871c7e481165db01ed3c5c0a1152549
                     || header.id == R.id.location_settings) {
                 return HEADER_TYPE_SWITCH;
             } else if (header.id == R.id.security_settings) {

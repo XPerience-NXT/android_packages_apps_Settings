@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2011-2014 The XPerience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +37,7 @@ public class AnonymousStats extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
     private static final String VIEW_STATS = "pref_view_stats";
 
-    private static final String PREF_FILE_NAME = "CMStats";
+    private static final String PREF_FILE_NAME = "XPerienceStats";
     /* package */ static final String ANONYMOUS_OPT_IN = "pref_anonymous_opt_in";
     /* package */ static final String ANONYMOUS_LAST_CHECKED = "pref_anonymous_checked_in";
 

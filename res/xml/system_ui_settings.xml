@@ -20,7 +20,30 @@
     android:title="@string/system_interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
+<!-- Animator XPerience -->
+    <PreferenceCategory
+        android:key="other_category"
+        android:title="@string/other_category" >
+
+        <ListPreference
+            android:key="listview_animation"
+            android:dialogTitle="@string/listview_animation_title"
+            android:title="@string/listview_animation_title"
+            android:entries="@array/listview_animation_entries"
+            android:entryValues="@array/listview_animation_values"
+            android:defaultValue="1" />
+
+         <ListPreference
+            android:key="listview_interpolator"
+            android:dialogTitle="@string/listview_interpolator_title"
+            android:title="@string/listview_interpolator_title"
+            android:entries="@array/listview_interpolator_entries"
+            android:entryValues="@array/listview_interpolator_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+   <!--<PreferenceScreen
         android:key="status_bar"
         android:fragment="com.android.settings.cyanogenmod.StatusBar"
         android:title="@string/status_bar_title" />
@@ -33,7 +56,7 @@
     <PreferenceScreen
         android:key="notification_drawer"
         android:fragment="com.android.settings.cyanogenmod.NotificationDrawer"
-        android:title="@string/notification_drawer_title" />
+        android:title="@string/notification_drawer_title" />-->
 
     <PreferenceCategory
             android:key="expanded_desktop_category"
@@ -56,6 +79,28 @@
                 android:title="@string/expanded_desktop_system_bars_visibility"
                 android:summary="@string/expanded_desktop_system_bars_visibility_summary"
                 android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+	<!--Extra Category-->
+    <PreferenceCategory
+        android:key="cat_extra"
+        android:title="@string/header_category_extra_settings" >
+
+        <PreferenceScreen
+            android:key="recents_ram_bar"
+            android:fragment="com.android.settings.xperience.RamBar"
+            android:title="@string/ram_bar" /> 
+
+        <!-- Device Specific Touchscreen gestures. Avoid duplicating CMHW functionality, please -->
+        <Preference
+            android:key="touch_screen_gesture_settings">
+            <intent
+                android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
+        </Preference>
+
 
     </PreferenceCategory>
 
@@ -92,7 +137,7 @@
             android:fragment="com.android.settings.cyanogenmod.LockscreenInterface"
             android:title="@string/lock_screen_title" />
 
-        <ListPreference
+        <!--<ListPreference
                 android:key="expanded_desktop"
                 android:title="@string/power_menu_expanded_desktop"
                 android:entries="@array/expanded_desktop_entries"
@@ -102,7 +147,7 @@
         <CheckBoxPreference
                 android:key="expanded_desktop_no_navbar"
                 android:title="@string/power_menu_expanded_desktop"
-                android:persistent="true" />
+                android:persistent="true" />-->
 
         <PreferenceScreen
             android:key="navigation_bar"
@@ -139,49 +184,6 @@
                 android:dependency="enable_nav_bar" />
 
         </PreferenceScreen>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="cat_extra"
-        android:title="@string/header_category_extra_settings" >
-
-        <PreferenceScreen
-            android:key="recents_ram_bar"
-            android:fragment="com.android.settings.xperience.RamBar"
-            android:title="@string/ram_bar" /> 
-
-        <!-- Device Specific Touchscreen gestures. Avoid duplicating CMHW functionality, please -->
-        <Preference
-            android:key="touch_screen_gesture_settings">
-            <intent
-                android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-                android:targetPackage="com.cyanogenmod.settings.device"
-                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
-        </Preference>
-
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="other_category"
-        android:title="@string/other_category" >
-
-        <ListPreference
-            android:key="listview_animation"
-            android:dialogTitle="@string/listview_animation_title"
-            android:title="@string/listview_animation_title"
-            android:entries="@array/listview_animation_entries"
-            android:entryValues="@array/listview_animation_values"
-            android:defaultValue="1" />
-
-         <ListPreference
-            android:key="listview_interpolator"
-            android:dialogTitle="@string/listview_interpolator_title"
-            android:title="@string/listview_interpolator_title"
-            android:entries="@array/listview_interpolator_entries"
-            android:entryValues="@array/listview_interpolator_values"
-            android:defaultValue="0" />
 
     </PreferenceCategory>
 

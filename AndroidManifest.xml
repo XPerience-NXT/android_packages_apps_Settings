@@ -1208,7 +1208,6 @@
         <activity android:name="ChooseLockPassword" android:exported="false"
             android:windowSoftInputMode="stateVisible|adjustResize"/>
 
-<<<<<<< HEAD
         <!-- Anonymous Statistics -->
         <receiver android:name=".cmstats.ReportingServiceManager"
             android:enabled="true"
@@ -1225,10 +1224,8 @@
             android:exported="false"
             android:name=".cmstats.ReportingService">
         </service>
-=======
         <activity android:name="ChooseEncryptionPassword" android:exported="false"
             android:windowSoftInputMode="stateVisible|adjustResize"/>
->>>>>>> 750ae1067871c7e481165db01ed3c5c0a1152549
 
         <!-- Runs in the phone process since it needs access to the Phone object -->
         <activity android:name=".deviceinfo.msim.MSimSubscriptionStatus"

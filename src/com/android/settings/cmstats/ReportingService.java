@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2011-2014 The XPerience Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,7 +44,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReportingService extends Service {
-    /* package */ static final String TAG = "CMStats";
+    /* package */ static final String TAG = "XPerienceStats";
 
     private StatsUploadTask mTask;
 
@@ -115,11 +116,8 @@ public class ReportingService extends Service {
 
             // report to the cfstats service
             HttpClient httpClient = new DefaultHttpClient();
-<<<<<<< HEAD
             HttpPost httpPost = new HttpPost("http://klozz.byethost12.com/stats/submit.php");
-=======
-            HttpPost httpPost = new HttpPost("https://stats.cyanogenmod.org/submit");
->>>>>>> 750ae1067871c7e481165db01ed3c5c0a1152549
+
             boolean success = false;
 
             try {
