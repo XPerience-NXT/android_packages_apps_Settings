@@ -517,10 +517,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (KEY_SCREEN_ANIMATION_STYLE.equals(key)) {
             int value = Integer.parseInt((String) objValue);
             try {
-<<<<<<< HEAD
+
                  Settings.System.putInt(getContentResolver(), SCREEN_ANIMATION_STYLE, value);
                 updateScreenAnimationStylePreferenceDescription(value);
-=======
+
                 if (value == -1) {
                     // disabled
                     Settings.System.putInt(getContentResolver(),
@@ -537,7 +537,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     // value is -1 and the method expects an index.
                     updateScreenAnimationStylePreferenceDescription(value + 1);
                 }
->>>>>>> 3dc7fcb01c6153f91f80418e1bda4f50aa7b5f49
+
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen animation style setting", e);
             }
