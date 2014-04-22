@@ -160,7 +160,6 @@
   <string name="wake_when_plugged_or_unplugged_title">Herää laturista</string>
   <string name="wake_when_plugged_or_unplugged_summary">Käynnistä näyttö kun liität tai irrotat virtalähteen</string>
   <string name="screen_animation_off_title">Näytön sulkemisanimaatio</string>
-  <string name="screen_animation_style_title">Animaation tyyli</string>
   <string name="screen_animation_style_electronbeam">Electron Beam</string>
   <string name="screen_animation_style_fade">Häivytä näyttö</string>
   <string name="edit_light_settings">Säädä valon asetuksia</string>
@@ -700,15 +699,10 @@ Lisää asetuksia on saaavilla painamalla riviä pitkään. Valitsemalla \'Muokk
   <string name="gps_download_data_wifi_only">Lataa GPS-avusteinen data vain Wi-Fi-verkkojen yli</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
-<<<<<<< HEAD
+
   <string name="menu_stats_reset">Nollaa</string>
   <string name="cmlicense_title">XPerience in lakiasiat</string>
   <string name="settings_cmlicense_activity_title">XPerience in lakiasiat</string>
-=======
-  <string name="menu_stats_reset">Palauta oletukset</string>
-  <string name="cmlicense_title">CyanogenModin lakiasiat</string>
-  <string name="settings_cmlicense_activity_title">CyanogenModin lakiasiat</string>
->>>>>>> d884fdeb9b9318c0942b0ea48bfca789fb15b781
   <string name="settings_cmlicense_activity_unreachable">Sinulla ei ole verkkoyhteyttä. Tarkastellaksesi näitä tietoja, mene osoitteeseen %s millä tahansa tietokoneella jossa on Internet-yhteys.</string>
   <string name="stylus_icon_enabled_title">Näytä kuvake stylus-kynää käyttäessä</string>
   <string name="stylus_icon_enabled_summary">Näytä osoitinkuvake liikuttaessa kynää näytöllä tai näytön yläpuolella</string>

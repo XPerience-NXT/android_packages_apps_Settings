@@ -160,7 +160,6 @@
   <string name="wake_when_plugged_or_unplugged_title">Ligar ecrã ao detetar carregador</string>
   <string name="wake_when_plugged_or_unplugged_summary">Ativar o ecrã quando conectar ou desconectar uma fonte de energia</string>
   <string name="screen_animation_off_title">Animação ao desligar o ecrã</string>
-  <string name="screen_animation_style_title">Estilo de animação</string>
   <string name="screen_animation_style_electronbeam">Feixe de elétrons</string>
   <string name="screen_animation_style_fade">Desaparecimento progressivo</string>
   <string name="edit_light_settings">Editar definições de luz</string>
@@ -220,7 +219,7 @@
   <string name="lockscreen_enable_camera_title">Widget da câmara</string>
   <string name="safe_headset_volume_title">Protecção de volume nos fones</string>
   <string name="cyanogenmod_waiver_title">Aviso</string>
-  <string name="cyanogenmod_waiver_body">Alterar esta configuração pode ser contra as leis do seu país.\n\nAo selecionar \'OK\' em baixo, você tem conhecimento deste aviso, e liberta a CyanogenMod e todos os seus colaboradores de qualquer responsabilidade legal.</string>
+  <string name="cyanogenmod_waiver_body">Alterar esta configuração pode ser contra as leis do seu país.\n\nAo selecionar \'OK\' em baixo, você tem conhecimento deste aviso, e liberta a XPerience e todos os seus colaboradores de qualquer responsabilidade legal.</string>
   <string name="quick_settings_panel_title">Painel configurações rápidas</string>
   <string name="title_static_tiles">Botões estáticos</string>
   <string name="tile_picker_title">Botões e ordenação</string>
@@ -355,19 +354,16 @@
   <string name="build_date">Data de compilação</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memória</string>
-<<<<<<< HEAD
+
   <string name="anonymous_statistics_title">Estatísticas XPerience</string>
-=======
-  <string name="anonymous_statistics_title">Estatísticas CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ajudar a melhorar a CyanogenMod optando por ativar o envio do relatório de estatísticas anónimas</string>
->>>>>>> d884fdeb9b9318c0942b0ea48bfca789fb15b781
+  <string name="anonymous_statistics_summary">Ajudar a melhorar a XPerience optando por ativar o envio do relatório de estatísticas anónimas</string>
   <string name="anonymous_statistics_warning_title">Sobre</string>
-  <string name="anonymous_statistics_warning">Optar pelo envio de estatísticas CyanogenMod vai permitir que dados não-pessoais sejam transmitidos aos desenvolvedores da CyanogenMod para rastrear instalações através dos dispositivos. As informações apresentadas incluem um identificador único, que não comprometem a sua privacidade e dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara um  exemplo dos dados que são enviados, toque em Previsualizar dados.</string>
+  <string name="anonymous_statistics_warning">Optar pelo envio de estatísticas XPerience vai permitir que dados não-pessoais sejam transmitidos aos desenvolvedores da XPerience para rastrear instalações através dos dispositivos. As informações apresentadas incluem um identificador único, que não comprometem a sua privacidade e dados pessoais. Os dados são enviados durante cada inicialização.\n\nPara um  exemplo dos dados que são enviados, toque em Previsualizar dados.</string>
   <string name="enable_reporting_title">Ativar relatório</string>
   <string name="preview_data_title">Previsualizar dados</string>
   <string name="view_stats_title">Visualizar estatísticas</string>
   <string name="anonymous_learn_more">Saber mais</string>
-  <string name="anonymous_notification_desc">Ativar ou desativar Estatísticas CyanogenMod</string>
+  <string name="anonymous_notification_desc">Ativar ou desativar Estatísticas XPerience</string>
   <string name="preview_id_title">Identificação única</string>
   <string name="preview_device_title">Dispositivo</string>
   <string name="preview_version_title">Versão</string>
@@ -691,13 +687,13 @@
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Gerir as configurações de SMS seguras</string>
   <string name="custom_runtime_warning_title">Aviso</string>
-  <string name="custom_runtime_warning_message">ART não é suportado pelo CyanogenMod. Esta configuração é incluída para experimentação e tem o potencialidade de causar instabilidade, falhas de sistema, perda de dados ou impedir a inicialização adequada do seu dispositivo. Visite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introdução a ART&lt;/a&gt; para mais informações.&lt;br/&gt;&lt;br/&gt;Solicitamos que não nos envie relatórios de erros se ativou ART runtime.&lt;br/&gt;&lt;br/&gt;Tem a certeza que deseja reiniciar para alterar runtime de<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> para <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
+  <string name="custom_runtime_warning_message">ART não é suportado pelo XPerience. Esta configuração é incluída para experimentação e tem o potencialidade de causar instabilidade, falhas de sistema, perda de dados ou impedir a inicialização adequada do seu dispositivo. Visite &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introdução a ART&lt;/a&gt; para mais informações.&lt;br/&gt;&lt;br/&gt;Solicitamos que não nos envie relatórios de erros se ativou ART runtime.&lt;br/&gt;&lt;br/&gt;Tem a certeza que deseja reiniciar para alterar runtime de<xliff:g id="old" example="libdvm.so">%1$s</xliff:g> para <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
   <string name="gps_download_data_wifi_only">Descarregar dados GPS assistido somente sobre redes Wi-Fi</string>
   <string name="battery_info_status_charging_dock_ac">(DockAC)</string>
   <string name="battery_info_status_charging_dock_usb">(DockUSB)</string>
   <string name="menu_stats_reset">Repor</string>
-  <string name="cmlicense_title">Licença CyanogenMod</string>
-  <string name="settings_cmlicense_activity_title">Licença CyanogenMod</string>
+  <string name="cmlicense_title">Licença XPerience</string>
+  <string name="settings_cmlicense_activity_title">Licença XPerience</string>
   <string name="settings_cmlicense_activity_unreachable">Não tem uma ligação de dados. Para exibir estas informações agora, vá para %s de qualquer computador ligado à Internet.</string>
   <string name="stylus_icon_enabled_title">Mostrar ícone quando estiver a usar a caneta</string>
   <string name="stylus_icon_enabled_summary">Mostrar o ícone do ponteiro quando flutuar ou desenhar com a caneta</string>

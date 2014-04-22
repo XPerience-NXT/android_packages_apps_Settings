@@ -160,7 +160,6 @@
   <string name="adaptive_backlight_summary">Die Hintergrundbeleuchtung des Bildschirms intelligent regeln, um die Akkulaufzeit zu verbessern</string>
   <string name="wake_when_plugged_or_unplugged_title">Beim Einstecken aufwecken</string>
   <string name="screen_animation_off_title">Abschaltanimation</string>
-  <string name="screen_animation_style_title">Animationsstil</string>
   <string name="screen_animation_style_electronbeam">Elektronenstrahl</string>
   <string name="screen_animation_style_fade">Ausblenden</string>
   <string name="edit_light_settings">Farbeinstellungen ändern</string>
@@ -220,7 +219,7 @@
   <string name="lockscreen_enable_camera_title">Kamera-Widget</string>
   <string name="safe_headset_volume_title">Headset-Lautstärkebegrenzung</string>
   <string name="cyanogenmod_waiver_title">Verzichtserklärung</string>
-  <string name="cyanogenmod_waiver_body">Das Deaktivieren dieser Funktion kann gegen geltendes Recht verstoßen.\n\nDurch Ihre Bestätigung erklären Sie, dass Sie CyanogenMod sowie alle daran Mitwirkenden von sämtlichen damit verbunden rechtlichen Verbindlichkeiten, u.A. Schadensersatzpflichten, befreien.</string>
+  <string name="cyanogenmod_waiver_body">Das Deaktivieren dieser Funktion kann gegen geltendes Recht verstoßen.\n\nDurch Ihre Bestätigung erklären Sie, dass Sie XPerience sowie alle daran Mitwirkenden von sämtlichen damit verbunden rechtlichen Verbindlichkeiten, u.A. Schadensersatzpflichten, befreien.</string>
   <string name="quick_settings_panel_title">Schnelleinstellungen</string>
   <string name="title_static_tiles">Statische Kacheln</string>
   <string name="tile_picker_title">Kacheln anordnen</string>
@@ -306,7 +305,6 @@
   <string name="auto_brightness_preview_dialog_title">Helligkeitsverlaufs-Vorschau</string>
   <string name="auto_brightness_help_dialog_title">Hilfe</string>
   <string name="auto_brightness_help_text"><b>Wie wird die Helligkeit berechnet?</b>
->>>>>>> d884fdeb9b9318c0942b0ea48bfca789fb15b781
 \n\n
 Der Verlauf der Helligkeit wird durch eine <i>kubische Interpolation</i> anhand der
 gegebenen Anzahl an <i>Stützstellen</i> berechnet - anders als gemeinhin angenommen, wird
