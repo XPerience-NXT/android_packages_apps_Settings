@@ -698,7 +698,6 @@ Des options supplémentaires sont disponibles en appuyant longtemps sur une lign
   <string name="gestures_action_search">Lancer une recherche</string>
   <string name="gestures_action_recent">Applications récentes</string>
   <string name="stylus_app_not_installed">%s n\'est pas installé</string>
->>>>>>> d884fdeb9b9318c0942b0ea48bfca789fb15b781
   <string name="ime_switcher_notify">Sélecteur de notifications</string>
   <string name="ime_switcher_notify_summary">Afficher une notification pour le sélectionneur de mode de saisie</string>
   <string name="app_ops_summaries_coarse_location">localisation approximative</string>
