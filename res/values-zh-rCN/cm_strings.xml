@@ -84,7 +84,7 @@
     <string name="lockscreen_target_reset_message">删除所有用户设定的快捷方式并还原为默认值？</string>
     <string name="lockscreen_target_empty">空</string>
     <string name="lockscreen_target_edit_title">编辑快捷方式与图标</string>
-|    <string name="lockscreen_target_edit_msg">选定或改变与快捷方式所关联的程序与图标</string>
+    <string name="lockscreen_target_edit_msg">选定或改变与快捷方式所关联的程序与图标</string>
     <string name="profiles_settings_title">情景模式</string>
     <string name="profiles_add">添加</string>
     <string name="profile_menu_delete">删除</string>

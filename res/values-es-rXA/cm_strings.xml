@@ -319,22 +319,9 @@ P\'ayudar nesto, va poder amosase una previsualización de la curva resultante. 
 \n\n
 <b>¿Cómo editar la curva de brillu?</b>
 \n\n
-<<<<<<< HEAD
-Cada llinia en llista de valores correspuéndese con un <i>puntu de control</i> de la curva de brillu.
-Pa editar el nivel de brillu d\'esi puntu, pues usar el control eslizante presente en cada
-llinia. El brillu de la pantalla va camudar en función del control eslizante p\'amosar una
-vista previa del nivel de lluminosidá.\n
-Tocando de forma prollongada cada llinia van amosase opciones adicionales. Seleicionando
-\u00ABEditar\u00BB, vas poder editar el nivel de lluminosidá ambiental del puntu de control asina
-como introducir manualmente\'l brillu de pantalla deseáu. Seleicionando \u00ABDividir\u00BB,
-vas poder crear una llinia nueva col envís d\'inxertar puntos de control adicionales.
-\u00ABDesaniciar\u00BB esborrará la llinia esbillada.
-    </string>
-
-=======
 Cada llinia en llista de valores correspuéndese con un <i>puntu de control</i> de la curva de brillu. Pa editar el nivel de brillu d\'esi puntu, pues usar el control eslizante presente en cada llinia. El brillu de la pantalla ca camudar en función del control eslizante p\'amosar una vista previa del nivel de lluminosidá.\n
 Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleicionando \u00ABEditar\u00BB, vas poder editar el nivel de lluminosidá ambiental del puntu de control asina como introducir manualmente el brillu de pantalla deseáu. Seleicionando \u00ABDividir\u00BB, vas poder crear una nueva llinia col envís d\'inxertar puntos de control adicionales. \u00ABDesaniciar\u00BB va borrar la llinia esbillada.</string>
->>>>>>> b9cc1b629344763e7d0807ab833699e330151a7e
+
   <string name="auto_brightness_sensitivity_title">Sensibilidá</string>
   <string name="auto_brightness_sensitivity_verylow">Mui baxa</string>
   <string name="auto_brightness_sensitivity_low">Baxa</string>
@@ -390,14 +377,10 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="build_date">Data de compilación</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">Memoria</string>
-<<<<<<< HEAD
   <string name="anonymous_statistics_title">Estadístiques XPerience</string>
   <string name="anonymous_statistics_summary">Ayuda a ameyorar XPerience per aciu del unviu anónimu d\'estadístiques</string>
-=======
+
   <string name="phone_service_state">Voz: <xliff:g id="voice_state">%1$s</xliff:g>, datos: <xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">Estadístiques CyanogenMod</string>
-  <string name="anonymous_statistics_summary">Ayuda a ameyorar CyanogenMod per aciu del unviu anónimu d\'estadístiques</string>
->>>>>>> b9cc1b629344763e7d0807ab833699e330151a7e
   <string name="anonymous_statistics_warning_title">Avisu</string>
   <string name="anonymous_statistics_warning">Permitiendo la recopilación y unviu d\'estadístiques de XPerience, autorices l\'unviu d\'información de calter non personal a los desendolcadores de XPerience pa facer un siguimientu de les instalaciones que faes nos preseos. La información unviada inclúi un identificador únicu que nun compromete la to privacidá nin la to información personal. Esta información únviase mientres l\'arranque.\n\nPa ver un exemplu de la información unviada, primi en \u00ABPrevisualizar datos\u00BB</string>
   <string name="enable_reporting_title">Activar unviu d\'estadístiques</string>
@@ -449,12 +432,8 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="changelog_error">Imposible cargar el rexistru de cambeos</string>
   <string name="changelog_unknown">Desconocíu</string>
   <string name="changelog_version">Versión</string>
-<<<<<<< HEAD
   <string name="cmupdate_settings_title">Anovamientos XPerience</string>
-=======
   <string name="contributor_cloud_title">Ver collaboradores</string>
-  <string name="cmupdate_settings_title">Anovamientos CyanogenMod</string>
->>>>>>> b9cc1b629344763e7d0807ab833699e330151a7e
   <string name="cmupdate_settings_summary">Comprobar, ver ya instalar anovamientos disponibles</string>
   <string name="advanced_settings_title">Opciones avanzaes</string>
   <string name="development_tools_title">Aniciar Ferramientes</string>
@@ -731,11 +710,7 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Xestiona la configuración de seguridá de los SMS</string>
   <string name="custom_runtime_warning_title">Avisu</string>
-<<<<<<< HEAD
   <string name="custom_runtime_warning_message">ART nun ta sofitáu por XPerience. Esti axuste incluyóse namái pa fines esperimentales y pue causar inestabilidá, bloqueos, perda de datos ya inclusu torgar el correutu aniciu del preséu. Pa más información visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducción a ART&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Nun aceutamos ficheros d\'informes de fallos si habilitesti ART.&lt;br/&gt;&lt;br/&gt;¿Daveres que quies reaniciar pa camudar el tiempu d\'execución de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
-=======
-  <string name="custom_runtime_warning_message">ART nun ta sofitáu oficialmente por CyanogenMod. Esti axuste incluyóse namái pa fines d\'esperimentación y pue causar inestabilidá, bloqueos, perda de datos ya inclusu torgar el correutu aniciu del preséu. Pa más información visita &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introducing ART&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Nun unvies ficheros d\'informes de fallos si habilitesti ART.&lt;br/&gt;&lt;br/&gt;¿De xuru que quies reaniciar pa camudar el tiempu d\'execución de <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> a <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
->>>>>>> b9cc1b629344763e7d0807ab833699e330151a7e
   <string name="gps_download_data_wifi_only">Descargar datos del GPS asistíu namái en redes Wi-Fi</string>
   <string name="battery_info_status_charging_dock_ac">(BaseAC)</string>
   <string name="battery_info_status_charging_dock_usb">(BaseUSB)</string>
@@ -806,10 +781,7 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="app_ops_summaries_alarm_volume">volume d\'alarma</string>
   <string name="app_ops_summaries_notification_volume">volume de notificación</string>
   <string name="app_ops_summaries_bluetooth_volume">volume de bluetooth</string>
-<<<<<<< HEAD
 
-  <string name="app_ops_labels_location">Llocalización</string>
-  <string name="app_ops_labels_vibrate">Vibración</string>
   <string name="app_ops_labels_camera">Cámara</string>
   <string name="app_ops_categories_location">Llocalización</string>
   <string name="app_ops_categories_messaging">Mensaxes</string>
@@ -817,7 +789,7 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="app_ops_show_system_apps">Aplicaciones del sistema</string>
   <string name="wifi_mode">Mou</string>
   <string name="voice_wakeup_default_activity">Google Now</string>
-=======
+
   <string name="app_ops_summaries_keep_awake">caltener encesu</string>
   <string name="app_ops_summaries_monitor_location">monitorizar llocalización</string>
   <string name="app_ops_summaries_monitor_high_power_location">monitorizar llocalización n\'alta precisión</string>
@@ -914,5 +886,5 @@ Tocando de mou prollongáu cada llinia, van amosase opciones adicionales. Seleic
   <string name="autoperf_title">Habilitar los perfiles por aplicación</string>
   <string name="autoperf_summary">Escoyer automáticamente un perfil de rindimientu afayadizu pa cada aplicación</string>
   <string name="graphics_title">Gráficos y renderizáu</string>
->>>>>>> b9cc1b629344763e7d0807ab833699e330151a7e
+
 </resources>
