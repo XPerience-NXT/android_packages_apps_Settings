@@ -25,4 +25,11 @@
     <string name="screen_off_animation_electronbeam">Electron beam</string>
     <string name="screen_off_animation_scaledown">Scale down</string>
     <string name="screen_off_animation_turnoff">Turn off</string>
+
+    <!--Notification category-->
+    <string name="notification_category">Notifications</string>
+
+    <!--Notification peek-->
+    <string name="notification_peek_title">Notification peek</string>
+    <string name="notification_peek_summary">Show latest notification after picking up your device</string>
 </resources>

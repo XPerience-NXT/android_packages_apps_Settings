@@ -40,11 +40,11 @@
        <PreferenceScreen
                 android:key="screen_recorder"
                 android:title="@string/screen_recorder_title"
-                android:fragment="com.android.settings.cyanogenmod.ScreenRecorderSettings" />
+                android:fragment="com.android.settings.XPerience.ScreenRecorderSettings" />
 
         <PreferenceScreen
                 android:key="display_rotation"
-                android:fragment="com.android.settings.cyanogenmod.DisplayRotation"
+                android:fragment="com.android.settings.XPerience.DisplayRotation"
                 android:title="@string/display_rotation_title" />
 
         <ListPreference
@@ -82,9 +82,9 @@
             android:key="advanced_display_settings"
             android:title="@string/advanced_settings_title">
             <intent
-                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
-                android:targetPackage="com.cyanogenmod.settings.device"
-                android:targetClass="com.cyanogenmod.settings.device.DisplaySettings" />
+                android:action="com.XPerience.action.LAUNCH_DEVICE_SETTINGS"
+                android:targetPackage="com.XPerience.settings.device"
+                android:targetClass="com.XPerience.settings.device.DisplaySettings" />
         </Preference>
 
         <CheckBoxPreference
@@ -98,7 +98,7 @@
             android:title="@string/double_tap_to_wake_title"
             android:defaultValue="false" />
 
-        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+        <com.android.settings.XPerience.SystemSettingCheckBoxPreference
             android:key="screen_off_animation"
             android:title="@string/screen_animation_off_title"
             android:defaultValue="true" />
@@ -147,7 +147,7 @@
                 android:summary="@string/wake_when_plugged_or_unplugged_summary"
                 android:defaultValue="false" />
 
-            <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            <com.android.settings.XPerience.SystemSettingCheckBoxPreference
                 android:key="screen_off_animation"
                 android:title="@string/screen_animation_off_title"
                 android:defaultValue="true" />
@@ -172,11 +172,21 @@
                 android:key="advanced_display_settings"
                 android:title="@string/radio_controls_title">
                 <intent
-                    android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
-                    android:targetPackage="com.cyanogenmod.settings.device"
-                    android:targetClass="com.cyanogenmod.settings.device.DisplaySettings" />
+                    android:action="com.XPerience.action.LAUNCH_DEVICE_SETTINGS"
+                    android:targetPackage="com.XPerience.settings.device"
+                    android:targetClass="com.XPerience.settings.device.DisplaySettings" />
             </Preference>
 
         </PreferenceCategory>
+
+        <!-- Notifications -->
+        <PreferenceCategory
+            android:key="notification_category"
+            android:title="@string/notification_category"/>
+
+        <CheckBoxPreference
+            android:key="notification_peek"
+            android:title="@string/notification_peek_title"
+            android:summary="@string/notification_peek_summary" />
 
 </PreferenceScreen>

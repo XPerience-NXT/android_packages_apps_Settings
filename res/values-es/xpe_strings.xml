@@ -25,4 +25,10 @@
     <string name="screen_off_animation_electronbeam">Haz de electrones</string>
     <string name="screen_off_animation_scaledown">Reducir proporcionalmente</string>
     <string name="screen_off_animation_turnoff">Apagar</string>
+    
+	<!-- PEEK TRANSLATIONS-->
+    <string name="notification_category">Notificaciones PEEK</string>
+    <string name="notification_peek_title">Ojear notificaciones</string>
+    <string name="notification_peek_summary">Mostrar la última notificación recibida luego de levantar tu dispositivo</string>
+
 </resources>
