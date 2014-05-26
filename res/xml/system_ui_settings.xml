@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The XPerience Project
+<!-- Copyright (C) 2012 The CyanogenMod Project
      Copyright (C) 2014 The XPerience Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -45,7 +45,7 @@
 
    <!--<PreferenceScreen
         android:key="status_bar"
-        android:fragment="com.android.settings.XPerience.StatusBar"
+        android:fragment="com.android.settings.cyanogenmod.StatusBar"
         android:title="@string/status_bar_title" />
 
     <PreferenceScreen
@@ -55,16 +55,16 @@
 
     <PreferenceScreen
         android:key="notification_drawer"
-        android:fragment="com.android.settings.XPerience.NotificationDrawer"
+        android:fragment="com.android.settings.cyanogenmod.NotificationDrawer"
         android:title="@string/notification_drawer_title" />-->
 
     <!-- Device Specific Touchscreen gestures. Avoid duplicating CMHW functionality, please -->
     <Preference
         android:key="touch_screen_gesture_settings">
         <intent
-            android:action="com.XPerience.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-            android:targetPackage="com.XPerience.settings.device"
-            android:targetClass="com.XPerience.settings.device.TouchscreenGestureSettings" />
+            android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
+            android:targetPackage="com.cyanogenmod.settings.device"
+            android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
     </Preference>
 
     <PreferenceCategory
@@ -83,13 +83,14 @@
                 android:title="@string/power_menu_expanded_desktop"
                 android:persistent="true" />
 
-        <com.android.settings.XPerience.SystemSettingCheckBoxPreference
+        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
                 android:key="expanded_desktop_system_bars_visibility"
                 android:title="@string/expanded_desktop_system_bars_visibility"
                 android:summary="@string/expanded_desktop_system_bars_visibility_summary"
                 android:defaultValue="false" />
 
     </PreferenceCategory>
+
 
 	<!--Extra Category-->
     <PreferenceCategory
@@ -105,9 +106,9 @@
         <Preference
             android:key="touch_screen_gesture_settings">
             <intent
-                android:action="com.XPerience.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-                android:targetPackage="com.XPerience.settings.device"
-                android:targetClass="com.XPerience.settings.device.TouchscreenGestureSettings" />
+                android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
         </Preference>
 
 
@@ -117,9 +118,9 @@
     <Preference
         android:key="touch_screen_gesture_settings">
         <intent
-            android:action="com.XPerience.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-            android:targetPackage="com.XPerience.settings.device"
-            android:targetClass="com.XPerience.settings.device.TouchscreenGestureSettings" />
+            android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
+            android:targetPackage="com.cyanogenmod.settings.device"
+            android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
     </Preference>
 
     <PreferenceCategory
@@ -128,7 +129,7 @@
 
         <PreferenceScreen
             android:key="status_bar"
-            android:fragment="com.android.settings.XPerience.StatusBar"
+            android:fragment="com.android.settings.cyanogenmod.StatusBar"
             android:title="@string/status_bar_title" />
 
         <PreferenceScreen
@@ -138,12 +139,12 @@
 
         <PreferenceScreen
             android:key="notification_drawer"
-            android:fragment="com.android.settings.XPerience.NotificationDrawer"
+            android:fragment="com.android.settings.cyanogenmod.NotificationDrawer"
             android:title="@string/notification_drawer_title" />
 
         <PreferenceScreen
             android:key="lock_screen_settings"
-            android:fragment="com.android.settings.XPerience.LockscreenInterface"
+            android:fragment="com.android.settings.cyanogenmod.LockscreenInterface"
             android:title="@string/lock_screen_title" />
 
         <!--<ListPreference
@@ -167,7 +168,7 @@
                 android:title="@string/navbar_enable_bar"
                 android:summary="@string/navbar_enable_bar_summary" />
 
-            <com.android.settings.XPerience.SystemSettingCheckBoxPreference
+            <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
                 android:key="navigation_bar_left"
                 android:title="@string/navigation_bar_left_title"
                 android:summary="@string/navigation_bar_left_summary"
@@ -176,34 +177,24 @@
 
             <PreferenceScreen
                 android:key="navbar_dimen_settings"
-                android:fragment="com.android.settings.XPerience.NavbarDimenSettings"
+                android:fragment="com.android.settings.cyanogenmod.NavbarDimenSettings"
                 android:title="@string/navbar_style_dimen_title"
                 android:dependency="enable_nav_bar" />
     
             <PreferenceScreen
                 android:key="navigation_bar"
-                android:fragment="com.android.settings.XPerience.NavBar"
+                android:fragment="com.android.settings.cyanogenmod.NavBar"
                 android:title="@string/navigation_bar_title"
                 android:dependency="enable_nav_bar" />
     
             <PreferenceScreen
                 android:key="navigation_ring"
-                android:fragment="com.android.settings.XPerience.NavRing"
+                android:fragment="com.android.settings.cyanogenmod.NavRing"
                 android:title="@string/navigation_ring_title"
                 android:dependency="enable_nav_bar" />
 
         </PreferenceScreen>
 
     </PreferenceCategory>
-
-        <!-- Notifications -->
-        <PreferenceCategory
-            android:key="notification_category"
-            android:title="@string/notification_category"/>
-
-        <CheckBoxPreference
-            android:key="notification_peek"
-            android:title="@string/notification_peek_title"
-            android:summary="@string/notification_peek_summary" />
 
 </PreferenceScreen>
