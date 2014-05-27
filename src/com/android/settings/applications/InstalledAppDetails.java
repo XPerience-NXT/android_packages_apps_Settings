@@ -107,7 +107,7 @@ public class InstalledAppDetails extends Fragment
     private UserManager mUserManager;
     private IUsbManager mUsbManager;
     private AppWidgetManager mAppWidgetManager;
-    private INotifivationManager mNotificationManager;
+    private INotificationManager mNotificationManager;
     private DevicePolicyManager mDpm;
     private ISms mSmsManager;
     private ApplicationsState mState;
@@ -386,8 +386,7 @@ public class InstalledAppDetails extends Fragment
     private void initNotificationButton() {
         boolean enabled = true; // default on
         try {
-            enabled = nNotificationManager.areNotificationsEnabledForPackage(mAppEntry.info.packageName,
-                    mAppEntry.info.uid);
+            enabled = mNotificationManager.areNotificationsEnabledForPackage(mAppEntry.info.packageName, mAppEntry.info.uid);
         } catch (android.os.RemoteException ex) {
             // this does not bode well
         }
