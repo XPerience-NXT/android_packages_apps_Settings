@@ -26,7 +26,6 @@
                     android:targetClass="com.cyngn.fota.SystemUpdateActivity" />
         </PreferenceScreen>
 
-        <!-- CyanFox Updates -->
         <PreferenceScreen android:key="cm_updates"
                 android:title="@string/cmupdate_settings_title">
             <intent android:action="android.intent.action.MAIN"
@@ -184,12 +183,6 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/build_date"
                 android:summary="@string/build_date_default" />
-
-        <!-- Mod version -->
-        <Preference android:key="mod_version"
-                style="?android:preferenceInformationStyle"
-                android:title="@string/mod_version"
-                android:summary="@string/mod_version_default" />
 
         <!-- Detailed build version -->
         <Preference android:key="build_number" 
