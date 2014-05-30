@@ -263,6 +263,7 @@
   <string name="title_dynamic_alarm">Alarma</string>
   <string name="title_dynamic_bugreport">Informe de error</string>
   <string name="title_dynamic_dock_battery">Batería de la base</string>
+  <string name="title_dynamic_equalizer">Ecualizador</string>
   <string name="title_dynamic_ime">Selector IME</string>
   <string name="title_dynamic_usbtether">Anclaje USB</string>
   <string name="title_dynamic_wifi">Pantalla de Cast</string>
@@ -318,6 +319,7 @@ Para ayudar en esto, se podrá mostrar una previsualización de la curva resulta
 \n\n
 <b>¿Cómo editar la curva de brillo?</b>
 \n\n
+<<<<<<< HEAD
 Cada línea en lista de valores se corresponde con un <i>punto de control</i> de la curva de brillo.
 Para editar el nivel de brillo de ese punto, puedes usar el control deslizante presente en cada
 línea. El brillo de la pantalla cambiará en función del control deslizante para mostrar una
@@ -846,6 +848,7 @@ podrás crear una nueva línea con el fin de insertar puntos de control adiciona
     <string name="wifi_ibss_freq_title">Canal / Frecuencia</string>
     <string name="wifi_channel">Canal</string>
     <string name="wifi_mhz">MHz</string>
+
   <string name="voice_wakeup_settings_title">Activación por voz</string>
   <string name="voice_wakeup_retrain_title">Entrenar tu voz</string>
   <string name="voice_wakeup_activity_title">Actividad para lanzar</string>
@@ -855,7 +858,7 @@ podrás crear una nueva línea con el fin de insertar puntos de control adiciona
   <string name="multi_sim_settings_group_summary">Selección de SIM por defecto</string>
   <string name="voice_title">Llamadas de voz</string>
   <string name="data_title">Llamadas de datos</string>
-  <string name="sms_title">Enviar SMS</string>
+  <string name="sms_title">Envío de SMS</string>
   <string name="priority_sub_title">Prioridad de suscripción</string>
   <string name="bluetooth_accept_all_files">Aceptar todos los tipos de archivo</string>
   <string name="autoperf_title">Perfiles por aplicación</string>
