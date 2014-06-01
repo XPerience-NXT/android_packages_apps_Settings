@@ -319,7 +319,6 @@ Para ayudar en esto, se podrá mostrar una previsualización de la curva resulta
 \n\n
 <b>¿Cómo editar la curva de brillo?</b>
 \n\n
-<<<<<<< HEAD
 Cada línea en lista de valores se corresponde con un <i>punto de control</i> de la curva de brillo.
 Para editar el nivel de brillo de ese punto, puedes usar el control deslizante presente en cada
 línea. El brillo de la pantalla cambiará en función del control deslizante para mostrar una
