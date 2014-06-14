@@ -128,7 +128,7 @@ public class InstalledAppDetails extends Fragment
     private View mScreenCompatSection;
     private CheckBox mAskCompatibilityCB;
     private CheckBox mEnableCompatibilityCB;
-    private CheckBox mPeekBlacklist;
+    private CheckBox mPeekBlacklist, mHoverBlacklist;
     private boolean mCanClearData = true;
     private TextView mAppVersion;
     private TextView mTotalSize;
@@ -407,16 +407,20 @@ public class InstalledAppDetails extends Fragment
  private void initBlacklistButton() {
         mBlacklistButton.setText(R.string.blacklist_button_title);
 
-        boolean allowedForPeek = true;
+        boolean allowedForPeek = true, allowedForHover = true;
 
         try {
             allowedForPeek = mNotificationManager
                     .isPackageAllowedForPeek(mAppEntry.info.packageName);
+	    allowedForHover = mNotificationManager
+                    .isPackageAllowedForHover(mAppEntry.info.packageName);
         } catch (android.os.RemoteException ex) {
             // uh oh
         }
         mPeekBlacklist.setChecked(!allowedForPeek);
         mPeekBlacklist.setOnCheckedChangeListener(this);
+	mHoverBlacklist.setChecked(!allowedForHover);
+        mHoverBlacklist.setOnCheckedChangeListener(this);
 
         mBlacklistButton.setOnClickListener(this);
     }
@@ -529,6 +533,7 @@ public class InstalledAppDetails extends Fragment
 
 	mBlacklistDialogView = inflater.inflate(R.layout.blacklist_dialog, null);
         mPeekBlacklist = (CheckBox) mBlacklistDialogView.findViewById(R.id.peek_blacklist);
+	mHoverBlacklist = (CheckBox) mBlacklistDialogView.findViewById(R.id.hover_blacklist);
 
         return view;
     }
@@ -1440,6 +1445,14 @@ public class InstalledAppDetails extends Fragment
         }
     }
 
+    private void setHoverState(boolean state) {
+        try {
+            mNotificationManager.setHoverBlacklistStatus(mAppEntry.info.packageName, state);
+        } catch (android.os.RemoteException ex) {
+           mHoverBlacklist.setChecked(!state); // revert
+        }
+    }
+
     private int getPremiumSmsPermission(String packageName) {
         try {
             if (mSmsManager != null) {
@@ -1541,8 +1554,9 @@ public class InstalledAppDetails extends Fragment
                 setNotificationsEnabled(true);
             }
 	} else if (buttonView == mPeekBlacklist) {
-
             setPeekState(isChecked);
+	} else if (buttonView == mHoverBlacklist) {
+            setHoverState(isChecked);
         } else if (buttonView == mPrivacyGuardSwitch) {
             if (isChecked) {
                 showDialogInner(DLG_PRIVACY_GUARD, 0);
