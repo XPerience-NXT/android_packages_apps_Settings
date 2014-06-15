@@ -17,7 +17,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
     <string name="wifi_setting_countrycode_title">Wi-Fi régiókód</string>
     <string name="wifi_setting_countrycode_summary">Adja meg a Wi-Fi régiókódját</string>
     <string name="wifi_setting_countrycode_error">Hiba történt a régiókód beállítása közben.</string>
@@ -703,7 +702,6 @@
     <string name="bluetooth_dun_profile_summary_use_for">Telefonos hálózati hozzáféréshez használja</string>
     <string name="ime_switcher_notify">Beviteli mód választó</string>
     <string name="ime_switcher_notify_summary">Beviteli mód választó megjelenítése az értesítési sávon</string>
-
   <string name="profile_reset_title">Visszaállítás</string>
   <string name="profile_reset_message">Biztosan vissza kívánja állítani az összes profilt és alkalmazáscsoportot alaphelyzetbe?</string>
   <string name="profile_delete_confirm">Biztosan törölni akarja ezt a profilt?</string>
@@ -873,6 +871,7 @@
   <string name="title_tile_bluetooth">Bluetooth</string>
   <string name="title_tile_brightness">Fényerő</string>
   <string name="title_tile_camera">Kamera</string>
+  <string name="title_tile_compass">Iránytű</string>
   <string name="title_tile_sleep">Alvó mód</string>
   <string name="title_tile_gps">GPS</string>
   <string name="title_tile_torch">Zseblámpa</string>
@@ -1278,6 +1277,7 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="power_menu_user_title">Felhasználóváltás</string>
   <string name="power_menu_sound_title">Hang mód</string>
   <string name="button_settings">Gombok</string>
+  <string name="hardware_keys_power_key_title">Bekapcsoló gomb</string>
   <string name="hardware_keys_home_key_title">Kezdő gomb</string>
   <string name="hardware_keys_menu_key_title">Menü gomb</string>
   <string name="hardware_keys_assist_key_title">Keresés gomb</string>
@@ -1294,8 +1294,12 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="hardware_keys_action_voice_search">Hangalapú keresés</string>
   <string name="hardware_keys_action_in_app_search">Alkalmazáson belüli keresés</string>
   <string name="hardware_keys_action_launch_camera">Kamera indítása</string>
+  <string name="power_end_call_title">Hívás vége</string>
+  <string name="power_end_call_summary">A bekapcsoló gomb megnyomásával befejezi a hívást</string>
   <string name="button_wake_title">Felébresztés</string>
   <string name="home_wake_summary">A kezdő gomb megnyomására felébred a készülék</string>
+  <string name="home_answer_call_title">Válasz a hívásra</string>
+  <string name="home_answer_call_summary">A kezdő gomb megnyomásával válaszol a bejövő hívásra</string>
   <string name="camera_wake_summary">A kamera gomb megnyomására felébred a készülék</string>
   <string name="camera_sleep_on_release_title">Betekintés</string>
   <string name="camera_sleep_on_release_summary">A kijelző ébren marad, amíg félig lenyomva tartja a gombot</string>
@@ -1327,7 +1331,6 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="background_result_successful">Háttérkép megváltozott</string>
   <string name="background_result_not_successful">Háttérkép nem változott</string>
   <string name="setting_lockscreen_background">Háttérkép alkalmazása</string>
-  <string name="accessibility_home_button_answers_call_prerefence_title">A kezdő gomb fogadja a hívást</string>
   <string name="confirm_delete_apn">Az APN törlődni fog.</string>
   <string name="status_bar_title">Értesítési sáv</string>
   <string name="status_bar_show_clock_title">Óra megjelenítése</string>
@@ -1355,6 +1358,8 @@ Az \"Eltávolítás\" törli a kiválasztott sort.</string>
   <string name="storage_rescan_media_complete">Keresés befejezve</string>
   <string name="whisperpush_title">WhisperPush</string>
   <string name="whisperpush_summary">Biztonságos SMS beállítások kezelése</string>
+  <string name="logger_title">Névtelen összeomlás naplózás</string>
+  <string name="logger_summary">Összeomlás naplózási beállítások</string>
   <string name="custom_runtime_warning_title">Figyelmeztetés</string>
 
   <string name="app_ops_labels_location">Hely neve</string>
