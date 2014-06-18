@@ -26,7 +26,6 @@
             android:summary="@string/unlock_set_unlock_mode_off"
             android:persistent="false"/>
 
-<<<<<<< HEAD:res/xml/security_settings_lockscreen.xml
         <PreferenceScreen
             android:fragment="com.android.settings.OwnerInfoSettings"
             android:key="owner_info_settings"
@@ -38,8 +37,6 @@
             android:title="@string/see_through_title"
             android:summary="@string/see_through_summary" />
 
-=======
->>>>>>> e0564219dd7953a4ca4674e427bb14a080275e7d:res/xml/security_settings_chooser_disabled_lockscreen.xml
     </PreferenceCategory>
 
 </PreferenceScreen>
