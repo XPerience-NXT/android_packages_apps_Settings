@@ -93,7 +93,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mToggleAppInstallation;
     private DialogInterface mWarnInstallApps;
     private CheckBoxPreference mToggleVerifyApps;
-    private CheckBoxPreference mPowerButtonInstantlyLocks;
     private CheckBoxPreference mSeeThrough;
 
     private Preference mNotificationAccess;
@@ -154,79 +153,11 @@ public class SecuritySettings extends RestrictedSettingsFragment
             }
         }
 
-        // lock after preference
-        mLockAfter = (ListPreference) root.findPreference(KEY_LOCK_AFTER_TIMEOUT);
-        if (mLockAfter != null) {
-            setupLockAfterPreference();
-            updateLockAfterPreferenceSummary();
-        } else if (!mLockPatternUtils.isLockScreenDisabled() && isCmSecurity) {
-            addPreferencesFromResource(R.xml.security_settings_slide_delay_cyanogenmod);
-
-            mSlideLockTimeoutDelay = (ListPreference) root
-                    .findPreference(SLIDE_LOCK_TIMEOUT_DELAY);
-            int slideTimeoutDelay = Settings.System.getInt(resolver,
-                    Settings.System.SCREEN_LOCK_SLIDE_TIMEOUT_DELAY, 5000);
-            mSlideLockTimeoutDelay.setValue(String.valueOf(slideTimeoutDelay));
-            updateSlideAfterTimeoutSummary();
-            mSlideLockTimeoutDelay.setOnPreferenceChangeListener(this);
-
-            mSlideLockScreenOffDelay = (ListPreference) root
-                    .findPreference(SLIDE_LOCK_SCREENOFF_DELAY);
-            int slideScreenOffDelay = Settings.System.getInt(resolver,
-                    Settings.System.SCREEN_LOCK_SLIDE_SCREENOFF_DELAY, 0);
-            mSlideLockScreenOffDelay.setValue(String.valueOf(slideScreenOffDelay));
-            updateSlideAfterScreenOffSummary();
-            mSlideLockScreenOffDelay.setOnPreferenceChangeListener(this);
-        }
-
         // lockscreen see through
         mSeeThrough = (CheckBoxPreference) root.findPreference(KEY_SEE_THROUGH);
         if (mSeeThrough != null) {
             mSeeThrough.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.LOCKSCREEN_SEE_THROUGH, 0) == 1);
-        }
-
-        if (isCmSecurity) {
-            // lock instantly on power key press
-            mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
-                    KEY_POWER_INSTANTLY_LOCKS);
-            checkPowerInstantLockDependency();
-        }
-
-        // biometric weak liveliness
-        mBiometricWeakLiveliness =
-                (CheckBoxPreference) root.findPreference(KEY_BIOMETRIC_WEAK_LIVELINESS);
-
-        // visible pattern
-        mVisiblePattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_PATTERN);
-
-        // visible error pattern
-        mVisibleErrorPattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_ERROR_PATTERN);
-
-        // visible dots
-        mVisibleDots = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_DOTS);
-
-        // lock instantly on power key press
-        mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
-                KEY_POWER_INSTANTLY_LOCKS);
-
-        // don't display visible pattern if biometric and backup is not pattern
-        if (resid == R.xml.security_settings_biometric_weak &&
-                mLockPatternUtils.getKeyguardStoredPasswordQuality() !=
-                DevicePolicyManager.PASSWORD_QUALITY_SOMETHING) {
-            PreferenceGroup securityCategory = (PreferenceGroup)
-                    root.findPreference(KEY_SECURITY_CATEGORY);
-            if (securityCategory != null) {
-                if (mVisiblePattern != null) {
-                    securityCategory.removePreference(mVisiblePattern);
-                }
-                if (mVisibleErrorPattern != null) {
-                    securityCategory.removePreference(mVisibleErrorPattern);
-                }
-                if (mVisibleDots != null) {
-                    securityCategory.removePreference(mVisibleDots);
-                }
-            }
         }
 
         // Append the rest of the settings
@@ -495,7 +426,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
             } else {
                 setNonMarketAppsAllowed(false);
             }
-        } else if (preference == mSeeThrough) {
+	} else if (preference == mSeeThrough) {
             Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SEE_THROUGH,
                     mSeeThrough.isChecked() ? 1 : 0);
         } else if (KEY_TOGGLE_VERIFY_APPLICATIONS.equals(key)) {
