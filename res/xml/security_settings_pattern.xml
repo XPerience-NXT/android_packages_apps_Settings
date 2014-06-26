@@ -53,6 +53,7 @@
             android:key="power_button_instantly_locks"
             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
 
+<<<<<<< HEAD
         <PreferenceScreen
             android:fragment="com.android.settings.OwnerInfoSettings"
             android:key="owner_info_settings"
@@ -64,6 +65,8 @@
             android:title="@string/see_through_title"
             android:summary="@string/see_through_summary" />
 
+=======
+>>>>>>> 2bafbe11fa7a3b5a41aadd5551c9ac6c85e176b4
     </PreferenceCategory>
 
 </PreferenceScreen>
