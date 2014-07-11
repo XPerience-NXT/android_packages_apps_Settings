@@ -109,7 +109,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_VERSION, "ro.xpe.version");
-        setValueSummary(KEY_MOD_VERSION, "ro.build.status");
+        setValueSummary(KEY_BUILD_STATUS, "ro.build.status");
         //setValueSummary(KEY_MOD_VERSION, "ro.cm.display.version");
         findPreference(KEY_MOD_VERSION).setEnabled(true);
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
@@ -373,7 +373,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
         final String PROC_VERSION_REGEX =
             "Linux version (\\S+) " + /* group 1: "3.0.31-g6fb96c9" */
             "\\((\\S+?)\\) " +        /* group 2: "x@y.com" (kernel builder) */
-            "(\\(gcc.* \\)) " +    /* ignore: GCC version information */
+            "(?:\\(gcc.* \\)) " +    /* ignore: GCC version information */
             "(#\\d+) " +              /* group 3: "#1" */
             "(?:.*?)?" +              /* ignore: optional SMP, PREEMPT, and any CONFIG_FLAGS */
             "((Sun|Mon|Tue|Wed|Thu|Fri|Sat).+)"; /* group 4: "Thu Jun 28 11:02:39 PDT 2012" */
