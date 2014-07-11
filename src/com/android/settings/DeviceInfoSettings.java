@@ -78,7 +78,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
     private static final String KEY_CM_UPDATES = "cm_updates";
     private static final String KEY_STATUS = "status_info";
     private static final String KEY_BUILD_STATUS = "build_status";
-    private static finar String KEY_MOD_KLOZZ = "TeamMEX_xda";
+    private static final String KEY_MOD_KLOZZ = "TeamMEX_xda";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
     long[] mHits = new long[3];
@@ -373,7 +373,7 @@ public class DeviceInfoSettings extends RestrictedSettingsFragment {
         final String PROC_VERSION_REGEX =
             "Linux version (\\S+) " + /* group 1: "3.0.31-g6fb96c9" */
             "\\((\\S+?)\\) " +        /* group 2: "x@y.com" (kernel builder) */
-            "(?:\\(gcc.+? \\)) " +    /* ignore: GCC version information */
+            "(\\(gcc.* \\)) " +    /* ignore: GCC version information */
             "(#\\d+) " +              /* group 3: "#1" */
             "(?:.*?)?" +              /* ignore: optional SMP, PREEMPT, and any CONFIG_FLAGS */
             "((Sun|Mon|Tue|Wed|Thu|Fri|Sat).+)"; /* group 4: "Thu Jun 28 11:02:39 PDT 2012" */
