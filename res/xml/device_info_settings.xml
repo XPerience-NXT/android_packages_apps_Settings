@@ -17,6 +17,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+<!--XPERIENCE HEADER-->
+	<PreferenceScreen android:key="xpe_logo"
+			  android:layout="@layout/logo_row" />
+
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title" 
@@ -54,12 +58,6 @@
             android:title="@string/changelog_title"
             android:fragment="com.android.settings.xperience.ChangeLog" >
         </PreferenceScreen> 
-
-        <!-- Contributors cloud -->
-        <PreferenceScreen android:key="contributor_cloud"
-            android:title="@string/contributor_cloud_title"
-            android:fragment="com.android.settings.cyanogenmod.ContributorsCloud" >
-        </PreferenceScreen>
 
         <!-- Legal Information -->
         <PreferenceScreen
@@ -182,10 +180,20 @@
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
 
+	<!--XPerience Status-->
+	 <Preference android:key="build_status" 
+                style="?android:preferenceInformationStyle"
+                android:title="@string/buildstatus"
+                android:summary="@string/build_status_info"/>
+
         <!-- SELinux status information -->
         <Preference android:key="selinux_status"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/selinux_status"
                 android:summary="@string/selinux_status_enforcing"/>
 
+	 <!-- Builder info (klozz) -->
+ 		<Preference android:key="TeamMEX_xda"
+			    style="?android:preferenceInformationStyle"
+			    android:title="@string/builder_info_title"/>
 </PreferenceScreen>

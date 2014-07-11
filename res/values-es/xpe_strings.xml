@@ -31,4 +31,8 @@
     <string name="notification_peek_title">Ojear notificaciones</string>
     <string name="notification_peek_summary">Mostrar la última notificación recibida luego de levantar tu dispositivo</string>
 
+	<!--XPERIENCE INFO-->
+    <string name="builder_info_title">Desarrollador</string>
+    <string name="buildstatus"> Estado de Compilación </string>
+    <string name="build_status_info"> Muestra el estado de la rom, si es una version NIGHTLY o una MR(RELEASE) </string>
 </resources>

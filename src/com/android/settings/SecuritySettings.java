@@ -161,7 +161,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
         // Append the rest of the settings
         // App security settings
-        addPreferencesFromResource(R.xml.security_settings_app_cyanogenmod);
+       // addPreferencesFromResource(R.xml.security_settings_app_cyanogenmod);
 
         mSmsSecurityCheck = (ListPreference) root.findPreference(KEY_SMS_SECURITY_CHECK_PREF);
         // Determine options based on device telephony support
