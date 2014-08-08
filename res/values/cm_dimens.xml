@@ -42,4 +42,8 @@
     <dimen name="navigation_bar_30">30dp</dimen>
     <dimen name="navigation_bar_24">24dp</dimen>
     <dimen name="navigation_bar_0">0dp</dimen>
+    <!-- Width of the sliding KeyguardSecurityContainer (includes 2x keyguard_security_view_margin) -->
+    <dimen name="pa_security_width">320dp</dimen>
+    <!-- Height of the sliding KeyguardSecurityContainer (includes 2x keyguard_security_view_margin) -->
+    <dimen name="pa_security_height">400dp</dimen>
 </resources>

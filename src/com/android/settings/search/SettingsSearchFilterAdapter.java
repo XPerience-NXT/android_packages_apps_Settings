@@ -82,6 +82,9 @@ public class SettingsSearchFilterAdapter extends BaseAdapter implements Filterab
         @Override
         protected void publishResults(CharSequence constraint, Filter.FilterResults results) {
             mFilteredInfo = (List<SearchInfo>) results.values;
+            if (mFilteredInfo != null) {
+                applyFilteredMatchSpans();
+            }
             notifyDataSetChanged();
         }
     };
@@ -99,10 +102,20 @@ public class SettingsSearchFilterAdapter extends BaseAdapter implements Filterab
                 mFilteredInfo = new ArrayList<SearchInfo>(infos);
             } else {
                 mFilteredInfo = filterInfos(mLastConstraint);
+                applyFilteredMatchSpans();
             }
             notifyDataSetChanged();
         }
     };
+
+    private static class MatchInfo {
+        int start;
+        int end;
+
+        public MatchInfo() {
+            start = end = -1;
+        }
+    }
 
     public static class SearchInfo {
         public final Header header;
@@ -114,8 +127,10 @@ public class SettingsSearchFilterAdapter extends BaseAdapter implements Filterab
         public final String key;
 
         private String mNormalizedTitle;
-        private int mMatchStart;
-        private int mMatchEnd;
+        // used in main thread
+        private final ArrayList<MatchInfo> mMatches = new ArrayList<MatchInfo>();
+        // updated in filter thread
+        private final ArrayList<MatchInfo> mPendingMatches = new ArrayList<MatchInfo>();
 
         public SearchInfo(Header header, int level, String fragment, String title,
                 int iconRes, int parentTitle, String key) {
@@ -128,8 +143,6 @@ public class SettingsSearchFilterAdapter extends BaseAdapter implements Filterab
             this.key = key;
 
             mNormalizedTitle = removeNonAlphaNumeric(title.toLowerCase());
-            mMatchStart = -1;
-            mMatchEnd = -1;
         }
     }
 
@@ -210,11 +223,13 @@ public class SettingsSearchFilterAdapter extends BaseAdapter implements Filterab
         }
         holder.imageView.setImageDrawable(d);
 
-        if (info.mMatchStart >= 0 && info.mMatchEnd >= 0) {
+        if (!info.mMatches.isEmpty()) {
             SpannableStringBuilder titleSpan = new SpannableStringBuilder(info.title);
-            ForegroundColorSpan span = new ForegroundColorSpan(mMatchHighlightColor);
-            titleSpan.setSpan(span, info.mMatchStart, info.mMatchEnd,
-                    SpannableStringBuilder.SPAN_INCLUSIVE_EXCLUSIVE);
+            for (MatchInfo match : info.mMatches) {
+                ForegroundColorSpan span = new ForegroundColorSpan(mMatchHighlightColor);
+                titleSpan.setSpan(span, match.start, match.end,
+                        SpannableStringBuilder.SPAN_INCLUSIVE_EXCLUSIVE);
+            }
             holder.titleView.setText(titleSpan);
         } else {
             holder.titleView.setText(info.title);
@@ -252,34 +267,47 @@ public class SettingsSearchFilterAdapter extends BaseAdapter implements Filterab
             String title = item.title.toLowerCase();
             String filteredTitle = item.mNormalizedTitle;
 
-            item.mMatchStart = -1;
-            item.mMatchEnd = -1;
+            item.mPendingMatches.clear();
 
             int pos = filteredTitle.indexOf(filteredConstraint);
-            if (pos != -1) {
+            while (pos != -1) {
                 int unfilteredLen = title.length();
                 int filteredLen = filteredTitle.length();
                 int constraintLen = filteredConstraint.length();
-                for (int ufIndex = pos, fIndex = pos;
+                MatchInfo match = new MatchInfo();
+                for (int ufIndex = 0, fIndex = 0;
                         ufIndex < unfilteredLen && fIndex < filteredLen; ufIndex++) {
                     if (title.charAt(ufIndex) != filteredTitle.charAt(fIndex)) {
                         continue;
                     }
                     if (fIndex == pos) {
-                        item.mMatchStart = ufIndex;
+                        match.start = ufIndex;
                     }
                     if (fIndex == pos + constraintLen - 1) {
-                        item.mMatchEnd = ufIndex + 1;
+                        match.end = ufIndex + 1;
                         break;
                     }
                     fIndex++;
                 }
 
+                if (match.start != -1 && match.end != -1) {
+                    item.mPendingMatches.add(match);
+                }
+                pos = filteredTitle.indexOf(filteredConstraint, pos + 1);
+            }
+            if (!item.mPendingMatches.isEmpty()) {
                 filteredValues.add(item);
             }
         }
 
         return filteredValues;
+    }
+
+    private void applyFilteredMatchSpans() {
+        for (SearchInfo info : mFilteredInfo) {
+            info.mMatches.clear();
+            info.mMatches.addAll(info.mPendingMatches);
+        }
     }
 
     private static String removeNonAlphaNumeric(String s) {
