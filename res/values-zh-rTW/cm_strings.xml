@@ -627,11 +627,8 @@
   <string name="battery_info_status_charging_dock_ac">(座架 AC)</string>
   <string name="battery_info_status_charging_dock_usb">(座架 USB)</string>
   <string name="menu_stats_reset">重設</string>
-<<<<<<< HEAD
   <string name="cmlicense_title">XPerience 法律條款</string>
   <string name="settings_cmlicense_activity_title">XPerience 法律條款</string>
-=======
->>>>>>> e92b4b0871c759ac73666cbd7c68402c30f1748c
   <string name="stylus_icon_enabled_title">使用觸控筆時顯示圖示</string>
   <string name="gestures_settings_title">觸控筆手勢</string>
   <string name="category_spen_title">觸控筆手勢</string>
