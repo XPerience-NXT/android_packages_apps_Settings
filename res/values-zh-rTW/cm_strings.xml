@@ -388,16 +388,11 @@
   <string name="build_date">版本日期</string>
   <string name="cpu_info">CPU</string>
   <string name="mem_info">記憶體</string>
-<<<<<<< HEAD
   <string name="anonymous_statistics_title">XPerience 統計</string>
   <string name="anonymous_statistics_summary">加入匿名統計報告以協助改進 XPerience</string>
-=======
   <string name="phone_service_state">語音：<xliff:g id="voice_state">%1$s</xliff:g>，資料：<xliff:g id="data_state">%2$s</xliff:g></string>
-  <string name="anonymous_statistics_title">CyanogenMod 統計</string>
-  <string name="anonymous_statistics_summary">加入匿名統計報告以協助改進 CyanogenMod</string>
->>>>>>> 573dc5c9e33ed689e240fe75b0928d61ae25706e
   <string name="anonymous_statistics_warning_title">關於</string>
-  <string name="anonymous_statistics_warning">加入 CyanogenMod 統計將允許非個人資料被提交到 CyanogenMod 的開發者，
+  <string name="anonymous_statistics_warning">加入 XPerience 統計將允許非個人資料被提交到 XPerience 的開發者，
         以追蹤每個裝置上的獨特安裝。提交的資訊包含一個唯一識別碼，此識別碼並不會泄露您的隱私或個人資料。
         該資料在每次開機時被提交。\n\n輕按預覽資料以預覽被提交資料的例子。</string>
   <string name="enable_reporting_title">啟用報告</string>
@@ -449,13 +444,9 @@
   <string name="changelog_error">無法讀取更新日誌</string>
   <string name="changelog_unknown">未知</string>
   <string name="changelog_version">版本</string>
-<<<<<<< HEAD
   <string name="cmupdate_settings_title">XPerience 更新</string>
   <string name="contributor_cloud_title">檢視貢獻者</string>
-=======
-  <string name="contributor_cloud_title">貢獻者</string>
-  <string name="cmupdate_settings_title">CyanogenMod 更新</string>
->>>>>>> 573dc5c9e33ed689e240fe75b0928d61ae25706e
+
   <string name="cmupdate_settings_summary">檢查、檢視或安裝可用的更新</string>
   <string name="advanced_settings_title">進階</string>
   <string name="development_tools_title">啟動開發工具</string>
@@ -746,14 +737,9 @@
   <string name="battery_info_status_charging_dock_ac">(座架 AC)</string>
   <string name="battery_info_status_charging_dock_usb">(座架 USB)</string>
   <string name="menu_stats_reset">重設</string>
-<<<<<<< HEAD
   <string name="cmlicense_title">XPerience 法律條款</string>
   <string name="settings_cmlicense_activity_title">XPerience 法律條款</string>
-=======
-  <string name="cmlicense_title">CyanogenMod 法律條款</string>
-  <string name="settings_cmlicense_activity_title">CyanogenMod 法律條款</string>
   <string name="settings_cmlicense_activity_unreachable">您沒有數據連線，如要立即查看這項資訊，請使用任何已連上網際網路的電腦前往 %s。</string>
->>>>>>> 573dc5c9e33ed689e240fe75b0928d61ae25706e
   <string name="stylus_icon_enabled_title">使用觸控筆時顯示圖示</string>
   <string name="stylus_icon_enabled_summary">使用觸控筆漂浮或繪圖時顯示指標圖示</string>
   <string name="gestures_settings_title">觸控筆手勢</string>

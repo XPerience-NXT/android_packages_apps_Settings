@@ -724,11 +724,8 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="logger_title">Anonieme logboekregistratie</string>
   <string name="logger_summary">Logboekinstellingen voor crashes beheren</string>
   <string name="custom_runtime_warning_title">Let op</string>
-<<<<<<< HEAD
   <string name="custom_runtime_warning_message">ART wordt niet ondersteund door XPerience. Deze instelling is opgenomen voor testdoeleinden en kan leiden tot instabiliteit, crashes, gegevensverlies en/of opstartproblemen. Ga naar &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introductie van ART (Engels)&lt;/a&gt; voor meer informatie.&lt;br/&gt;&lt;br/&gt;Wij verzoeken u geen foutrapporten in te sturen, wanneer ART is ingeschakeld.&lt;br/&gt;&lt;br/&gt;Weet u zeker dat u wilt herstarten om apps niet meer te laten draaien op <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>, maar op <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
-=======
-  <string name="custom_runtime_warning_message">ART wordt niet officieel ondersteund door CyanogenMod. Deze instelling is opgenomen voor testdoeleinden en kan leiden tot instabiliteit, crashes, gegevensverlies en/of opstartproblemen. Ga naar &lt;a href=\"http://source.android.com/devices/tech/dalvik/art.html\"&gt;Introductie van ART (Engels)&lt;/a&gt; voor meer informatie.&lt;br/&gt;&lt;br/&gt;Wij verzoeken u geen foutenrapporten in te sturen wanneer ART is ingeschakeld.&lt;br/&gt;&lt;br/&gt;Weet u zeker dat u wilt herstarten om apps niet meer te laten draaien op <xliff:g id="old" example="libdvm.so">%1$s</xliff:g>, maar op <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string>
->>>>>>> 573dc5c9e33ed689e240fe75b0928d61ae25706e
+
   <string name="gps_download_data_wifi_only">GPS-ondersteunende gegevens alleen downloaden via wifi</string>
   <string name="battery_info_status_charging_dock_ac">(dock-AC)</string>
   <string name="battery_info_status_charging_dock_usb">(dock-USB)</string>
@@ -919,11 +916,6 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="spam_added_title">Toegevoegd <xliff:g id="time_since" example="5 minutes ago">%1$s</xliff:g></string>
   <string name="spam_last_blocked_title">Laatst geblokkeerd <xliff:g id="time_since" example="5 minutes ago">%1$s</xliff:g> (total: <xliff:g id="count" example="2 times">%2$s</xliff:g>)</string>
   <string name="block_notifications_title">Meldingen filteren</string>
-<<<<<<< HEAD
-  <string name="no_filters_title">Geen filters ingesteld</string>
-
-=======
   <string name="block_notifications_summary">Genegeerde meldingen en filters beheren</string>
   <string name="no_filters_title">Geen filters ingesteld. Om een melding te filteren, drukt u lang op een melding en kiest u \'Meldingen als deze negeren\'.</string>
->>>>>>> 573dc5c9e33ed689e240fe75b0928d61ae25706e
 </resources>
